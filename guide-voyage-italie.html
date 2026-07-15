@@ -1,0 +1,2860 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voyage familial en Italie 2026 | Côte Amalfitaine, Sicile et Rome</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #faf8f4;
+      --warm-white: #fff9f2;
+      --terracotta: #c4623a;
+      --terracotta-light: #e8896a;
+      --navy: #1a2744;
+      --navy-light: #2d4070;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --sage: #7a9e7e;
+      --sand: #d4c5a9;
+      --text: #2c2c2c;
+      --text-light: #6b6b6b;
+      --border: #e8e0d0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 40%, #3a5a8c 70%, #5a7fad 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .hero-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-subtitle {
+      font-size: 2rem;
+      color: rgba(255,255,255,0.7);
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin-bottom: 50px;
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 40px;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta-item {
+      text-align: center;
+    }
+
+    .hero-meta-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .hero-meta-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: #fff;
+    }
+
+    /* ── NAV PILLS ── */
+    .nav-pills {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--navy);
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 14px 20px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    }
+
+    .nav-pills a {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+
+    .nav-pills a:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* ── WRAPPER ── */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section + .section {
+      border-top: 1px solid var(--border);
+    }
+
+    .section-eyebrow {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 400;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .section-date {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 32px;
+    }
+
+    /* ── VILLA CARD ── */
+    .villa-hero-img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 40px;
+      display: block;
+      background: linear-gradient(135deg, var(--navy-light), var(--sage));
+    }
+
+    .villa-img-placeholder {
+      width: 100%;
+      height: 360px;
+      border-radius: 16px;
+      margin-bottom: 40px;
+      background: linear-gradient(135deg, #1a3a5c 0%, #3a6e8c 50%, #5a9aad 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.8);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-style: italic;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .villa-img-placeholder::before {
+      content: '🌊';
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 40px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .photo-gallery img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .photo-gallery img:hover { transform: scale(1.02); }
+    .photo-gallery img:first-child {
+      grid-column: 1 / -1;
+      height: 320px;
+    }
+
+    .villa-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .stat-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+
+    .stat-icon {
+      font-size: 1.6rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy);
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-top: 4px;
+      display: block;
+    }
+
+    /* ── DESCRIPTION PROSE ── */
+    .prose {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text);
+      margin-bottom: 32px;
+    }
+
+    .prose strong {
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    /* ── ROOMS GRID ── */
+    .rooms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .room-item {
+      background: var(--warm-white);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 16px;
+    }
+
+    .room-name {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .room-desc {
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    /* ── INFO BOXES ── */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 32px 0;
+    }
+
+    @media (max-width: 600px) {
+      .info-grid { grid-template-columns: 1fr; }
+      .hero-meta { gap: 24px; }
+    }
+
+    .info-box {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .info-box-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .info-box ul {
+      list-style: none;
+    }
+
+    .info-box ul li {
+      font-size: 0.92rem;
+      color: var(--text);
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .info-box ul li:last-child { border-bottom: none; }
+
+    .info-box ul li::before {
+      content: '·';
+      color: var(--gold);
+      font-size: 1.2rem;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ── ALERT BOX ── */
+    .alert {
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 24px 0;
+      font-size: 0.92rem;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .alert-warning {
+      background: #fef9ec;
+      border: 1px solid #f0d070;
+      color: #7a5c1a;
+    }
+
+    .alert-info {
+      background: #f0f4ff;
+      border: 1px solid #b0c4f0;
+      color: #2a3a6a;
+    }
+
+    .alert-success {
+      background: #f0faf2;
+      border: 1px solid #90d0a0;
+      color: #1a4a2a;
+    }
+
+    .alert-icon { font-size: 1.2rem; flex-shrink: 0; }
+
+    /* ── DAY BADGE ── */
+    .day-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--terracotta);
+      color: #fff;
+      border-radius: 30px;
+      padding: 8px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    /* ── TIMELINE ── */
+    .timeline {
+      position: relative;
+      padding-left: 32px;
+      margin: 32px 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold), var(--terracotta-light));
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 28px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -26px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid var(--cream);
+      box-shadow: 0 0 0 2px var(--gold);
+    }
+
+    .timeline-time {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 4px;
+    }
+
+    .timeline-content {
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .timeline-content strong {
+      color: var(--navy);
+    }
+
+    /* ── POMPEII SITES GRID ── */
+    .sites-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .site-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .site-card:hover {
+      border-color: var(--terracotta-light);
+      transform: translateY(-2px);
+    }
+
+    .site-card-icon { font-size: 1.5rem; margin-bottom: 10px; }
+
+    .site-card-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .site-card-desc {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    /* ── LINKS ── */
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--terracotta);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: background 0.2s, transform 0.2s;
+      margin-right: 12px;
+      margin-top: 8px;
+    }
+
+    .btn-link:hover {
+      background: #a84d2a;
+      transform: translateY(-1px);
+    }
+
+    .btn-link-outline {
+      background: transparent;
+      border: 2px solid var(--navy);
+      color: var(--navy);
+    }
+
+    .btn-link-outline:hover {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    /* ── GROCERY LIST ── */
+    .grocery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .grocery-cat {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .grocery-cat-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 10px;
+    }
+
+    .grocery-cat ul {
+      list-style: none;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    .grocery-cat ul li {
+      padding: 3px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .grocery-cat ul li::before {
+      content: '□';
+      color: var(--sand);
+    }
+
+    /* ── TIPS ── */
+    .tips-list {
+      list-style: none;
+      margin: 16px 0;
+    }
+
+    .tips-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    .tips-list li:last-child { border-bottom: none; }
+
+    .tips-list li .tip-icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: 16px;
+      padding: 32px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 32px 0;
+    }
+
+    .contact-card-info { }
+
+    .contact-card-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .contact-card-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .contact-card-detail {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .contact-card a {
+      color: var(--gold-light);
+      text-decoration: none;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.85rem;
+    }
+
+    footer strong {
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* ── DIVIDER ── */
+    .ornament {
+      text-align: center;
+      color: var(--gold);
+      font-size: 1.2rem;
+      letter-spacing: 8px;
+      margin: 40px 0;
+      opacity: 0.5;
+    }
+
+    /* ── PRICE TABLE ── */
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.93rem;
+    }
+
+    .price-table th {
+      background: var(--navy);
+      color: rgba(255,255,255,0.8);
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .price-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .price-table tr:nth-child(even) td {
+      background: var(--warm-white);
+    }
+
+    .price-table td:last-child {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    /* ── TAG ── */
+    .tag {
+      display: inline-block;
+      background: var(--sand);
+      color: var(--navy);
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin: 3px 2px;
+    }
+
+    .tag-green { background: #d4ead6; color: #1a4a2a; }
+    .tag-orange { background: #fde8d8; color: #7a3010; }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <h1>Voyage <em>Familial</em> en Italie</h1>
+  <p class="hero-eyebrow">Guide de Voyage · Juillet 2026</p>
+
+  <!-- Photos de groupe -->
+  <div style="display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:48px;">
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="sam.jpg" alt="Sam" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>S</span>'">
+      </div>
+      <span style="font-family:\'Playfair Display\',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">Sam</span>
+    </div>
+
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="meb.jpg" alt="Meb" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>M</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">Meb</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="cathp.jpg" alt="Cath P" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>C</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">CathP</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="em.jpg" alt="Em" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>E</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">Em</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="Ralph.jpeg" alt="Raph" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>R</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">Raph</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="Philou.jpeg" alt="Philou" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>P</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">Philou</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="ChaCha.PNG" alt="Chacha" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>C</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">Chacha</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="LP.jpeg" alt="LP" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>L</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">LP</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="Maxou.JPG" alt="Maxou" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>M</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">Maxou</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="Frankie.jpg" alt="Frankie" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>F</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">Frankie</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;border-radius:50%;border:3px solid rgba(201,168,76,0.6);overflow:hidden;margin:0 auto 10px;background:#1a2744;">
+        <img src="CathB.jpeg" alt="Cath B" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'line-height:90px;font-size:1.6rem;color:rgba(255,255,255,0.4)\'>C</span>'">
+      </div>
+      <span style="font-family:'Playfair Display',serif;color:#fff;font-size:0.95rem;letter-spacing:1px;">Cath B</span>
+    </div>
+
+  </div>
+
+  <!-- COMPTEUR -->
+  <div style="margin-top:48px;text-align:center;">
+    <div id="countdown-label" style="font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Départ dans</div>
+    <div id="countdown-done" style="display:none;font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--gold);font-style:italic;">✈️ Bon voyage !</div>
+    <div id="countdown-boxes" style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <div style="text-align:center;">
+        <div id="cd-days" style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1;">--</div>
+        <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px;">jours</div>
+      </div>
+      <div style="font-size:2.5rem;color:rgba(255,255,255,0.3);line-height:1.2;">:</div>
+      <div style="text-align:center;">
+        <div id="cd-hours" style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1;">--</div>
+        <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px;">heures</div>
+      </div>
+      <div style="font-size:2.5rem;color:rgba(255,255,255,0.3);line-height:1.2;">:</div>
+      <div style="text-align:center;">
+        <div id="cd-mins" style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1;">--</div>
+        <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px;">minutes</div>
+      </div>
+      <div style="font-size:2.5rem;color:rgba(255,255,255,0.3);line-height:1.2;">:</div>
+      <div style="text-align:center;">
+        <div id="cd-secs" style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1;">--</div>
+        <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px;">secondes</div>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var target = new Date('2026-07-18T19:40:00');
+    function pad(n){ return String(n).padStart(2,'0'); }
+    function tick(){
+      var now = new Date();
+      var diff = target - now;
+      if(diff <= 0){
+        document.getElementById('countdown-boxes').style.display='none';
+        document.getElementById('countdown-label').style.display='none';
+        document.getElementById('countdown-done').style.display='block';
+        return;
+      }
+      var d = Math.floor(diff/86400000);
+      var h = Math.floor((diff%86400000)/3600000);
+      var m = Math.floor((diff%3600000)/60000);
+      var s = Math.floor((diff%60000)/1000);
+      document.getElementById('cd-days').textContent = d;
+      document.getElementById('cd-hours').textContent = pad(h);
+      document.getElementById('cd-mins').textContent = pad(m);
+      document.getElementById('cd-secs').textContent = pad(s);
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+  </script>
+
+  <!-- COMPTEUR MARIAGE -->
+  <div style="margin-top:36px;text-align:center;">
+    <div id="wedding-label" style="font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">💍 Mariage dans</div>
+    <div id="wedding-done" style="display:none;font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--gold);font-style:italic;">💍 Félicitations !</div>
+    <div id="wedding-boxes" style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <div style="text-align:center;">
+        <div id="wd-days" style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1;">--</div>
+        <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px;">jours</div>
+      </div>
+      <div style="font-size:2.5rem;color:rgba(255,255,255,0.3);line-height:1.2;">:</div>
+      <div style="text-align:center;">
+        <div id="wd-hours" style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1;">--</div>
+        <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px;">heures</div>
+      </div>
+      <div style="font-size:2.5rem;color:rgba(255,255,255,0.3);line-height:1.2;">:</div>
+      <div style="text-align:center;">
+        <div id="wd-mins" style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1;">--</div>
+        <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px;">minutes</div>
+      </div>
+      <div style="font-size:2.5rem;color:rgba(255,255,255,0.3);line-height:1.2;">:</div>
+      <div style="text-align:center;">
+        <div id="wd-secs" style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1;">--</div>
+        <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px;">secondes</div>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var target = new Date('2026-07-27T00:00:00');
+    function pad(n){ return String(n).padStart(2,'0'); }
+    function tick(){
+      var now = new Date();
+      var diff = target - now;
+      if(diff <= 0){
+        document.getElementById('wedding-boxes').style.display='none';
+        document.getElementById('wedding-label').style.display='none';
+        document.getElementById('wedding-done').style.display='block';
+        return;
+      }
+      var d = Math.floor(diff/86400000);
+      var h = Math.floor((diff%86400000)/3600000);
+      var m = Math.floor((diff%3600000)/60000);
+      var s = Math.floor((diff%60000)/1000);
+      document.getElementById('wd-days').textContent = d;
+      document.getElementById('wd-hours').textContent = pad(h);
+      document.getElementById('wd-mins').textContent = pad(m);
+      document.getElementById('wd-secs').textContent = pad(s);
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+  </script>
+</header>
+
+<!-- NAV -->
+<nav class="nav-pills">
+  <a href="#calendrier">Calendrier</a>
+  <a href="#checklist">Checklist</a>
+  <a href="#arrivee">Côte</a>
+  <a href="#castellabate">Castellabate</a>
+  <a href="#sicile">Sicile</a>
+  <a href="#rome">Rome</a>
+</nav>
+
+<!-- ══════════════════════════════════════ -->
+<!-- CALENDRIER JUILLET 2026 -->
+<!-- ══════════════════════════════════════ -->
+<section style="background:var(--navy);padding:60px 0;" id="calendrier">
+  <div class="container">
+    <p style="font-size:10px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;text-align:center;">Planning du séjour</p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:400;color:#fff;text-align:center;margin-bottom:40px;">Juillet · Août <em style="color:var(--gold-light);">2026</em></h2>
+
+    <div style="max-width:680px;margin:0 auto;">
+      <!-- Jours de la semaine -->
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:4px;">
+        <div style="text-align:center;font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,0.4);padding:8px 0;text-transform:uppercase;">Lun</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,0.4);padding:8px 0;text-transform:uppercase;">Mar</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,0.4);padding:8px 0;text-transform:uppercase;">Mer</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,0.4);padding:8px 0;text-transform:uppercase;">Jeu</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,0.4);padding:8px 0;text-transform:uppercase;">Ven</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,0.4);padding:8px 0;text-transform:uppercase;">Sam</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,0.4);padding:8px 0;text-transform:uppercase;">Dim</div>
+      </div>
+
+      <!-- Grille calendrier (Juillet 2026 : 1er = mercredi) -->
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;">
+
+        <!-- Semaine 1 — cases vides lun/mar -->
+        <div style="padding:10px 4px;min-height:64px;"></div>
+        <div style="padding:10px 4px;min-height:64px;"></div>
+        <!-- Mer 1 -->
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;">
+          <span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">1</span>
+        </div>
+        <!-- Jeu 2 -->
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;">
+          <span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">2</span>
+        </div>
+        <!-- Ven 3 -->
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;">
+          <span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">3</span>
+        </div>
+        <!-- Sam 4 -->
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;">
+          <span style="font-size:0.85rem;color:rgba(255,255,255,0.4);display:block;">4</span>
+        </div>
+        <!-- Dim 5 -->
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;">
+          <span style="font-size:0.85rem;color:rgba(255,255,255,0.4);display:block;">5</span>
+        </div>
+
+        <!-- Semaine 2 : 6–12 -->
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">6</span></div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">7</span></div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">8</span></div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">9</span></div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">10</span></div>
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.4);display:block;">11</span></div>
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.4);display:block;">12</span></div>
+
+        <!-- Semaine 3 : 13–19 -->
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">13</span></div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">14</span></div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">15</span></div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">16</span></div>
+        <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.5);display:block;">17</span></div>
+        <!-- Sam 18 — Départ Canada -->
+        <a href="#depart" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#8a3a1a,#c06040);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">18</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🛫 AC882<br>19h40</span>
+        </div></a>
+        <!-- Dim 19 — Arrivée -->
+        <a href="#arrivee" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#2a7a4a,#4aaa6a);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">19</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">✈️ Arrivée<br>9h40</span>
+        </div></a>
+
+        <!-- Semaine 4 : 20–26 — ÉVÉNEMENTS -->
+        <!-- Lun 20 — Pompéi -->
+        <a href="#pompei" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#c4623a,#e8896a);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">20</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🏛 Pompéi</span>
+        </div></a>
+        <!-- Mar 21 — Séance photo -->
+        <a href="#photo" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#7a4a9a,#a06ac0);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">21</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">📸 Photo</span>
+        </div></a>
+        <!-- Mer 22 — Bateau -->
+        <a href="#bateau" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#1a6a9a,#3a9acf);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">22</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">⛵ Bateau</span>
+        </div></a>
+        <a href="#libre" style="text-decoration:none;display:block;"><div style="background:linear-gradient(135deg,#2a6a4a,#4aaa7a);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'"><span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">23</span><span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🌞 Libre</span></div></a>
+        <a href="#chef" style="text-decoration:none;display:block;"><div style="background:linear-gradient(135deg,#6a3a6a,#9a5a9a);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'"><span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">24</span><span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🍽 Chef Privé</span></div></a>
+        <!-- Sam 25 — Départ Castellabate -->
+        <a href="#castellabate" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#8a3a1a,#c06040);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">25</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🚗 Castellabate</span>
+        </div></a>
+        <!-- Dim 26 — Garden Riviera -->
+        <a href="#castellabate" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#8a3a1a,#c06040);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">26</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🏨 Garden<br>Riviera</span>
+        </div></a>
+
+        <!-- Semaine 5 : 27–31 -->
+        <!-- Lun 27 — Mariage -->
+        <a href="#castellabate" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#8a3a1a,#c06040);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">27</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.95);font-weight:700;line-height:1.2;display:block;margin-top:3px;">💒 Mariage</span>
+        </div></a>
+        <!-- Mar 28 — Départ Sicile -->
+        <a href="#sicile" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#8a3a1a,#c06040);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">28</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🚆 Sicile</span>
+        </div></a>
+        <!-- Mer 29 — No Mafia Tour -->
+        <a href="#sicile" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#1a5c2a,#2e8b57);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">29</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🚫 No Mafia</span>
+        </div></a>
+        <a href="#sicile" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#7a3a00,#c87020);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">30</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🍝 Fattoria<br>Augustali</span>
+        </div></a>
+        <!-- Ven 31 — Journée libre Sicile -->
+        <a href="#sicile" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#1a5c2a,#2e8b57);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">31</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🌴 Libre</span>
+        </div></a>
+        <!-- Sam 1 août — Rome -->
+        <a href="#rome" style="text-decoration:none;display:block;">
+        <div style="background:linear-gradient(135deg,#c4623a,#e8896a);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <span style="font-size:0.85rem;color:#fff;font-weight:700;display:block;">1</span>
+          <span style="font-size:9px;color:rgba(255,255,255,0.9);font-weight:600;line-height:1.2;display:block;margin-top:3px;">🏛 Rome</span>
+        </div></a>
+        <!-- Dim 2 août — vide -->
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;">
+          <span style="font-size:0.85rem;color:rgba(255,255,255,0.3);display:block;">2</span>
+          <span style="font-size:8px;color:rgba(255,255,255,0.25);display:block;margin-top:2px;">Août</span>
+        </div>
+
+        <!-- Semaine 2 août : 3–9 -->
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.3);display:block;">3</span></div>
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.3);display:block;">4</span></div>
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.3);display:block;">5</span></div>
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.3);display:block;">6</span></div>
+        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.3);display:block;">7</span></div>
+        <div style="background:rgba(255,255,255,0.02);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.2);display:block;">8</span></div>
+        <div style="background:rgba(255,255,255,0.02);border-radius:8px;padding:10px 4px;min-height:64px;text-align:center;"><span style="font-size:0.85rem;color:rgba(255,255,255,0.2);display:block;">9</span></div>
+      </div>
+
+      <!-- Légende -->
+      <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:28px;">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- CHECKLIST AVANT DÉPART -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="checklist" style="background:linear-gradient(160deg,#fdf6ee 0%,#fff9f5 100%);">
+  <div class="container">
+    <p class="section-eyebrow">Avant de partir</p>
+    <h2 class="section-title">Checklist · Chacun son tour</h2>
+    <p class="prose" style="margin:8px 0 28px;">Cliquez sur votre nom, cochez vos éléments. La page se souvient de vos réponses.</p>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;" id="name-btns">
+      <!-- Buttons generated by JS -->
+    </div>
+
+    <div id="checklist-panel" style="display:none;">
+      <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:18px;">
+        Bonjour <span id="active-name" style="color:var(--terracotta);font-style:italic;"></span> 👋
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;" id="check-items"></div>
+      <div id="check-done-msg" style="display:none;margin-top:20px;padding:14px 20px;background:var(--terracotta);color:#fff;border-radius:12px;font-weight:600;font-size:0.95rem;">
+        ✅ Tout est prêt — bon voyage !
+      </div>
+    </div>
+
+    <!-- Récapitulatif -->
+    <div style="margin-top:32px;">
+      <div style="font-size:0.78rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:14px;">État du groupe</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;" id="summary-badges"></div>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var ITEMS = ['🛂 Passeport','🏥 Assurance','💶 Euros','🔌 Chargeur','🔌 Adaptateur','👒 Chapeau','🕶 Lunettes solaires','💧 Gourde','👟 Souliers de marche','🧴 Crème solaire','💊 Médicaments','💳 Carte de crédit','💳 Carte de débit','📱 Forfait itinérance cellulaire','💍 Kit pour le mariage','👜 Sac bandoulière'];
+    var EXTRA = {'François':['🚗 Permis international'],'Samuel':['🚗 Permis international'],'Maxence':['🚗 Permis international'],'Louis-Philippe':['🚗 Permis international'],'Charlotte':['👶 Poussette','🏕 Parc','🧸 Toutou']};
+    var REMOVE = {'Charlotte':['💶 Euros','🔌 Chargeur','🔌 Adaptateur','💧 Gourde','👟 Souliers de marche','🧴 Crème solaire','💊 Médicaments','💳 Carte de crédit','💳 Carte de débit','📱 Forfait itinérance cellulaire','👜 Sac bandoulière']};
+    function itemsFor(n){ var base=ITEMS.concat(EXTRA[n]||[]);var rem=REMOVE[n]||[];return base.filter(function(i){return rem.indexOf(i)===-1;}); }
+    var NAMES = ['François','Samuel','Emma','Maxence','Louis-Philippe','Marie-Eve','Raphaelle','Catherine P','Charlotte','Catherine B','Philippe'];
+    var STORE_KEY = 'checklist_italie_2026';
+    var state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+    var activeName = null;
+
+    function save(){ localStorage.setItem(STORE_KEY, JSON.stringify(state)); }
+
+    function renderNameBtns(){
+      var cont = document.getElementById('name-btns');
+      cont.innerHTML = '';
+      NAMES.forEach(function(n){
+        var btn = document.createElement('button');
+        btn.textContent = n;
+        btn.style.cssText = 'padding:8px 18px;border-radius:20px;border:2px solid '+(activeName===n?'var(--terracotta)':'#d4c8a8')+';background:'+(activeName===n?'var(--terracotta)':'#fff')+';color:'+(activeName===n?'#fff':'var(--navy)')+';font-family:Inter,sans-serif;font-size:0.85rem;font-weight:600;cursor:pointer;transition:all .2s;';
+        btn.onclick = function(){ activeName = n; render(); };
+        cont.appendChild(btn);
+      });
+    }
+
+    function renderPanel(){
+      var panel = document.getElementById('checklist-panel');
+      if(!activeName){ panel.style.display='none'; return; }
+      panel.style.display='block';
+      document.getElementById('active-name').textContent = activeName;
+      if(!state[activeName]) state[activeName] = {};
+      var cont = document.getElementById('check-items');
+      cont.innerHTML = '';
+      var allDone = true;
+      itemsFor(activeName).forEach(function(item){
+        var checked = !!state[activeName][item];
+        if(!checked) allDone = false;
+        var card = document.createElement('label');
+        card.style.cssText = 'display:flex;align-items:center;gap:12px;padding:14px 16px;background:'+(checked?'#e8f5e9':'#fff')+';border:2px solid '+(checked?'#81c784':'#e8e0d0')+';border-radius:12px;cursor:pointer;transition:all .2s;';
+        var cb = document.createElement('input');
+        cb.type='checkbox'; cb.checked=checked;
+        cb.style.cssText='width:20px;height:20px;accent-color:var(--terracotta);cursor:pointer;';
+        cb.onchange = function(){
+          state[activeName][item] = cb.checked;
+          save(); render();
+        };
+        var lbl = document.createElement('span');
+        lbl.textContent = item;
+        lbl.style.cssText = 'font-size:0.9rem;font-weight:600;color:var(--navy);';
+        card.appendChild(cb); card.appendChild(lbl);
+        cont.appendChild(card);
+      });
+      document.getElementById('check-done-msg').style.display = allDone ? 'block' : 'none';
+    }
+
+    function renderSummary(){
+      var cont = document.getElementById('summary-badges');
+      cont.innerHTML = '';
+      NAMES.forEach(function(n){
+        var s = state[n] || {};
+        var its = itemsFor(n);
+        var count = its.filter(function(i){ return s[i]; }).length;
+        var pct = Math.round(count/its.length*100);
+        var badge = document.createElement('div');
+        badge.style.cssText = 'padding:6px 14px;border-radius:20px;font-size:0.78rem;font-weight:600;background:'+(pct===100?'#e8f5e9':pct>0?'#fff9f5':'#f5f2ec')+';border:1.5px solid '+(pct===100?'#81c784':pct>0?'var(--terracotta)':'#d4c8a8')+';color:var(--navy);cursor:pointer;';
+        badge.textContent = n + (pct===100?' ✅':pct>0?' ('+count+'/'+ITEMS.length+')':'');
+        badge.onclick = function(){ activeName = n; render(); window.scrollTo({top:document.getElementById('checklist').offsetTop-80,behavior:'smooth'}); };
+        cont.appendChild(badge);
+      });
+    }
+
+    function render(){ renderNameBtns(); renderPanel(); renderSummary(); }
+    render();
+  })();
+  </script>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 2 — JOUR DE DÉPART -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="depart" style="background:linear-gradient(160deg,#fff9f5 0%,#fdf6ee 100%);">
+  <div class="container">
+    <div class="day-badge">🛫 18 Juillet · 19h40</div>
+    <p class="section-eyebrow">C'est parti !</p>
+    <h2 class="section-title">Départ vers l'Italie</h2>
+    <p class="section-date">Air Canada AC882 · Montréal → Naples</p>
+
+    <p class="prose">
+      Le grand départ ! Direction Naples à bord du vol Air Canada AC882. Le décollage est prévu à <strong>19h40</strong> — arrivée à Naples le lendemain matin à 9h40.
+    </p>
+
+    <p class="prose">
+      N'oubliez pas votre <strong>passeport</strong>, au moins <strong>250 Euro par couple</strong>, votre <strong>carte de débit</strong> et votre <strong>carte de crédit</strong>. Chaque voyageur a droit à une valise de moins de <strong>50 livres (23 kg)</strong> et un <strong>bagage à main</strong>.
+    </p>
+
+    <div class="alert alert-warning" style="margin-bottom:24px;">
+      <span class="alert-icon">⏰</span>
+      <span><strong>Important :</strong> Tout le monde doit être à l'aéroport <strong>3 heures à l'avance</strong> — soit avant <strong>16h40</strong>. On se retrouve au <strong>Salon Banque Nationale</strong> à l'aéroport.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 3 — JOUR D'ARRIVÉE -->
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 1 — LA VILLA -->
+
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="arrivee">
+  <div class="container">
+    <div class="day-badge">🏡 19 Juillet</div>
+    <p class="section-eyebrow">Programme</p>
+    <h2 class="section-title">Arrivée · Épicerie &amp; Repos</h2>
+    <p class="section-date">Installation · Provisions · Détente</p>
+
+    <p class="prose">
+      Après le voyage, priorité à l'installation et à la récupération. Épicerie pour les premiers jours, on profite de la piscine et on découvre la villa à votre rythme.
+    </p>
+
+    <!-- Timeline -->
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">9h40 · Atterrissage ✈️ Aéroport de Naples Capodichino</div>
+        <div class="timeline-content">Débarquement, récupération des bagages.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time">10h30 · 🚐 Transport privé · Départ pour la villa</div>
+        <div class="timeline-content">Prise en charge à la sortie du terminal, direction la Côte Amalfitaine.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time">~11h30 · 🍕 Arrêt déjeuner · Vico Equense — Pizza al Metro da Gigino</div>
+        <div class="timeline-content">Arrêt recommandé sur la SS145, à mi-chemin entre Castellammare et Sorrente. Vico Equense est célèbre pour avoir inventé la <em>pizza al metro</em> (pizza vendue au mètre). L'institution locale depuis 1955 : <strong>Ristorante da Gigino</strong>, Via Nicotera 15 — parfait pour un premier repas en Italie en bord de mer.<br>
+        Durée de l'arrêt : ~1h · Trajet restant jusqu'à la villa : ~20 min</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">13h00 · 🛒 Arrêt épicerie · Conad · Piano di Sorrento</div>
+        <div class="timeline-content">L'une des principales coopératives italiennes de grande distribution, fondée à Bologne en 1962.<br>📍 Corso Italia 374, Piano di Sorrento</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time">14h00–14h30 · 🏠 Arrivée à Villa Ligea · payé chauffeur cash · 💶 880 €</div>
+        <div class="timeline-content">Check-in, visite de la propriété, installation dans les chambres.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19h30 · 🍲 Souper à la Villa Ligea</div>
+        <div class="timeline-content"></div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;font-weight:600;margin:28px 0 16px;">👨‍🍳 Brigade du soir</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:32px;">
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">👨‍🍳</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Emma &amp; Samuel</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Chefs</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">👨‍🍳</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Philippe</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Sous-chef</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🍹</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Raphaëlle</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Cocktail girl</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🍷</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">François</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Sommelier</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">😋</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Marie-Eve</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Supervisor chip mium mium</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🌸</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Les Catherine</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Préparation de la table</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🫧</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Louis-Philippe &amp; Maxence</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">La plonge</div></div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;font-weight:600;margin:0 0 16px;">🍽 Suggestion de menu</h3>
+    <p class="prose" style="margin:0 0 16px;">Un premier repas en Italie — simple, frais, fait maison. Les produits locaux font le reste.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Apéro</div><div style="font-weight:600;color:var(--navy);">Bruschette &amp; charcuterie</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Tomates cerises, basilic, huile locale · prosciutto, burrata</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--terracotta);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Entrée</div><div style="font-weight:600;color:var(--navy);">Salade caprese &amp; antipasti</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Mozzarella di bufala, tomates, basilic frais, filets d'anchois</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--navy);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Pasta</div><div style="font-weight:600;color:var(--navy);">Spaghetti alle vongole</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Palourdes fraîches, ail, persil, vin blanc · classique incontournable</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Plat principal</div><div style="font-weight:600;color:var(--navy);">Branzino al cartoccio</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Loup de mer en papillote, citron, câpres, olives, légumes du marché</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--terracotta);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Dessert</div><div style="font-weight:600;color:var(--navy);">Panna cotta &amp; fruits</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Coulis de fraises, biscotti, limoncello en digestif sous les étoiles</div></div>
+    </div>
+
+    <!-- Liste d'épicerie suggérée -->
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;margin:32px 0 16px;font-weight:400;">🛒 Liste d'épicerie suggérée</h3>
+    <div class="grocery-grid">
+      <div class="grocery-cat">
+        <div class="grocery-cat-title">Petit-déjeuner</div>
+        <ul>
+          <li>Café / café moulu</li>
+          <li>Pain / cornetti</li>
+          <li>Beurre &amp; confiture</li>
+          <li>Jus d'orange</li>
+          <li>Yaourts</li>
+        </ul>
+      </div>
+      <div class="grocery-cat">
+        <div class="grocery-cat-title">Repas & cuisine</div>
+        <ul>
+          <li>Pâtes (plusieurs sortes)</li>
+          <li>Sauce tomate San Marzano</li>
+          <li>Huile d'olive extra vierge</li>
+          <li>Parmesan / Pecorino</li>
+          <li>Légumes frais</li>
+        </ul>
+      </div>
+      <div class="grocery-cat">
+        <div class="grocery-cat-title">Piscine &amp; apéro</div>
+        <ul>
+          <li>Eau minérale (encore)</li>
+          <li>Vin local (Falanghina)</li>
+          <li>Bière</li>
+          <li>Fruits de saison</li>
+          <li>Charcuterie italienne</li>
+        </ul>
+      </div>
+      <div class="grocery-cat">
+        <div class="grocery-cat-title">Essentiels</div>
+        <ul>
+          <li>Crème solaire</li>
+          <li>Bouteilles d'eau</li>
+          <li>Café espresso</li>
+          <li>Snacks &amp; fromages</li>
+          <li>Produits ménagers</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alert alert-info">
+      <span class="alert-icon">💡</span>
+      <span><strong>À savoir :</strong> Sant'Agata sui Due Golfi dispose de petits supermarchés et de marchés locaux. Pour un plus grand choix, Sorrento (10 km) possède de plus grands supermarchés. Les restaurants Don Alfonso et Lo Stuzzichino à Sant'Agata sont des étoilés Michelin à essayer pendant le séjour !</span>
+    </div>
+    <p class="section-eyebrow">Hébergement</p>
+    <h2 class="section-title">Villa Ligea</h2>
+    <p class="section-date">Sant'Agata sui Due Golfi · Côte de Sorrente</p>
+
+    <div class="photo-gallery">
+      <img src="https://www.amorerentals.com/rentals/fotos/2/1618502927babf7eb9b876d1a8c4a44cb31e8d6770/161850357728a587fd4ed2d071596de66e5048b3c5.jpg" alt="Villa Ligea – Vue panoramique">
+      <img src="https://www.amorerentals.com/rentals/fotos/2/1618502927babf7eb9b876d1a8c4a44cb31e8d6770/16185029350aa8ea533561387c3636bb0b7edf6271.jpg" alt="Villa Ligea – Piscine à débordement">
+      <img src="https://www.amorerentals.com/rentals/fotos/2/1618502927babf7eb9b876d1a8c4a44cb31e8d6770/16185035805ff86fc91d3e53f3461038aeeea1d686.jpg" alt="Villa Ligea – Terrasse">
+      <img src="https://www.amorerentals.com/rentals/fotos/2/1618502927babf7eb9b876d1a8c4a44cb31e8d6770/16185029415e2157b417cb8a389918a8adc8d56274.jpg" alt="Villa Ligea – Intérieur">
+    </div>
+
+    <p class="prose">
+      <strong>Villa Ligea</strong> est une propriété d'exception perchée sur un terrain de 600 m² face à la mer Tyrrhénienne. Entourée des vertes collines de la péninsule de Sorrente, elle offre un style de vie intérieur-extérieur sans couture, avec terrasses panoramiques et piscine à débordement aux vues à couper le souffle.
+    </p>
+
+    <p class="prose">
+      Le jardin comprend une magnifique <strong>cuisine extérieure</strong> avec table pour 10, plaque gaz, four électrique et barbecue, parfaite pour les dîners en plein air. À l'intérieur, une cuisine de designer avec vue mer panoramique, un escalier en spirale menant au salon avec cheminée et terrasse vue mer.
+    </p>
+
+    <!-- Chambres -->
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.3rem;margin-bottom:16px;font-weight:400;">Chambres &amp; Salles de bain</h3>
+    <div class="rooms-grid">
+      <div class="room-item">
+        <div class="room-name">Chambre 1 — RDC</div>
+        <div class="room-desc">Lit king size · TV · Vue jardin<br>Salle de bain en suite</div>
+      </div>
+      <div class="room-item">
+        <div class="room-name">Chambre 2 — RDC</div>
+        <div class="room-desc">2 lits simples · Accessible depuis Ch. 1</div>
+      </div>
+      <div class="room-item">
+        <div class="room-name">Chambre 3 — RDC</div>
+        <div class="room-desc">Lit king size · TV · Vue terrasse<br>Salle de bain en suite</div>
+      </div>
+      <div class="room-item">
+        <div class="room-name">Chambre 4 — 1er</div>
+        <div class="room-desc">Lit king size · TV · Terrasse vue mer<br>Salle de bain en suite</div>
+      </div>
+      <div class="room-item">
+        <div class="room-name">Chambre 5 — 1er</div>
+        <div class="room-desc">Lit king size · TV · Terrasse vue mer<br>Salle de bain en suite</div>
+      </div>
+      <div class="room-item">
+        <div class="room-name">Buanderie — RDC</div>
+        <div class="room-desc">Lave-linge · Sèche-linge · Fer à repasser</div>
+      </div>
+    </div>
+
+    <div class="ornament">· · ·</div>
+
+    <!-- Services inclus / Alentours -->
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="info-box-title">✅ Services inclus</div>
+        <ul>
+          <li>Piscine à débordement (mars–novembre)</li>
+          <li>Climatisation dans toute la villa</li>
+          <li>Ménage quotidien 3h/j, 6j/semaine</li>
+          <li>1 serviette piscine/personne/semaine</li>
+          <li>Linge de lit changé tous les 3 jours</li>
+          <li>Cuisine entièrement équipée</li>
+          <li>Wi-Fi</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box-title">📍 À proximité</div>
+        <ul>
+          <li>Restaurant le plus proche — 1,5 km</li>
+          <li>Commerces — 2 km</li>
+          <li>Sant'Agata centre — 2,5 km</li>
+          <li>Bus SITA pour Sorrente — 800 m</li>
+          <li>Plage de sable (Cala di Puolo) — 7 km</li>
+          <li>Sorrente — 10 km</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <!-- Contact villa -->
+    <div class="contact-card">
+      <div class="contact-card-info">
+        <div class="contact-card-label">Contact Amore Rentals</div>
+        <div class="contact-card-name">Villa Ligea</div>
+        <div class="contact-card-detail">📍 Via Torvillo n.7 · Sant'Agata sui Due Golfi</div>
+        <div class="contact-card-detail">📞 <a href="tel:+390818772921">+39 081 877 2921</a></div>
+        <div class="contact-card-detail">💬 <a href="https://api.whatsapp.com/send?phone=390818772921">WhatsApp</a></div>
+      </div>
+      <a href="https://www.amorerentals.com/rentals/villa-sant-agata-sui-due-golfi-amore-rentals-villa-ligea-with-private-swimming-pool-sea-view-and-parking-345610.html" class="btn-link" target="_blank">Voir la fiche villa →</a>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 3 — POMPÉI -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="pompei">
+  <div class="container">
+    <div class="day-badge">🏛 20 Juillet</div>
+    <p class="section-eyebrow">Excursion</p>
+    <h2 class="section-title">Visite guidée de Pompéi</h2>
+    <p class="section-date">Dimanche 20 Juillet</p>
+
+    <p class="prose">
+      Une des expériences les plus extraordinaires de la région : l'ancienne cité romaine engloutie en 79 après J.-C. par l'éruption du Vésuve. La visite guidée de 3 à 4 heures avec <strong><a href="https://www.pompeiitourguide.com" target="_blank" style="color:var(--terracotta);">Pompeiitourguide.com</a></strong> (Gaetano et Ciro, 4 générations depuis 1948) vous permettra de découvrir les incontournables du site avec toute la profondeur historique que le lieu mérite.
+    </p>
+
+    <div style="border-radius:16px;overflow:hidden;margin-bottom:32px;box-shadow:0 6px 24px rgba(0,0,0,0.15);">
+      <img src="Pompei.jpg" alt="Pompéi" style="width:100%;height:320px;object-fit:cover;display:block;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+    </div>
+
+    <!-- Timeline de la journée -->
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;margin-bottom:20px;font-weight:400;">🗓 Programme de la journée</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">8h00 · 🚐 Transfert privé depuis Villa Ligea jusqu'à Pompéi &nbsp;<span style="font-size:0.72rem;color:#cc0000;font-weight:600;">⚠️ Retardataires non attendus</span></div>
+        <div class="timeline-content">Direction Pompéi — l'une des plus grandes découvertes archéologiques de l'humanité. Une ville entière figée dans le temps depuis l'éruption du Vésuve en 79 apr. J.-C. On marche littéralement dans les rues d'il y a 2 000 ans.
+          <ul class="tips-list" style="margin-top:12px;">
+            <li><span class="tip-icon">☀️</span><span>Juillet = chaleur intense. Portez des chaussures fermées confortables, un chapeau, et apportez beaucoup d'eau et de la crème solaire.</span></li>
+            <li><span class="tip-icon">🎒</span><span>Les sacs dépassant 30×30×15 cm doivent être déposés à la consigne (Porta Marina). Voyagez léger.</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">9h00 · Point de rendez-vous · 📍 Porta Marina — Via Villa dei Misteri 1</div>
+        <div class="timeline-content">🔥 Le moment est arrivé. Devant nous : les rues, les maisons, les fresques et les secrets d'une cité engloutie par le Vésuve en 79 apr. J.-C. — et ressuscitée pour nous. Gaetano ou Ciro nous attend. L'aventure commence.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">9h00 à 12h00 · Visite guidée</div>
+        <div class="timeline-content">Notre guide — Gaetano ou Ciro — descend d'une lignée de passionnés qui arpentent ces ruines depuis 1948. Quatre générations d'histoires, d'anecdotes et de secrets que les touristes ordinaires ne voient jamais. Préparez-vous à voir Pompéi comme peu de gens ont eu la chance de le faire.
+
+          <div style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1rem;font-weight:600;margin:20px 0 12px;">Les principales choses à voir :</div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:20px;">
+
+            <a href="https://visiterpompei.it/forum/" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+              <img id="img-pom-1" src="Forum.jpg" alt="Le Forum de Pompéi" style="width:100%;height:160px;object-fit:cover;background:#d4c8a8;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+              <div style="padding:14px;background:#fff;">
+                <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Le Forum</div>
+                <p style="font-size:0.82rem;color:var(--text-light);margin:6px 0 0;line-height:1.5;">Temples, basilique et marché — le must absolu.</p>
+              </div>
+            </a>
+
+            <a href="https://visiterpompei.it/villa-des-mysteres/" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+              <img id="img-pom-2" src="Mistere.jpg" alt="Villa des Mystères" style="width:100%;height:160px;object-fit:cover;background:#c8b890;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+              <div style="padding:14px;background:#fff;">
+                <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Villa des Mystères</div>
+                <p style="font-size:0.82rem;color:var(--text-light);margin:6px 0 0;line-height:1.5;">L'une des plus belles maisons du site — fresques quasi intactes.</p>
+              </div>
+            </a>
+
+            <a href="https://visiterpompei.it/jardin-des-fugitifs/" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+              <img id="img-pom-3" src="fugitif.jpg" alt="Jardin des Fugitifs" style="width:100%;height:160px;object-fit:cover;background:#b8a888;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+              <div style="padding:14px;background:#fff;">
+                <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Jardin des Fugitifs</div>
+                <p style="font-size:0.82rem;color:var(--text-light);margin:6px 0 0;line-height:1.5;">Moulages en plâtre des victimes — moment de recueillement.</p>
+              </div>
+            </a>
+
+            <a href="https://visiterpompei.it/thermes/" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+              <img id="img-pom-4" src="Stabiane.jpg" alt="Thermes de Pompéi" style="width:100%;height:160px;object-fit:cover;background:#c8c0a0;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+              <div style="padding:14px;background:#fff;">
+                <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Thermes de Pompéi</div>
+                <p style="font-size:0.82rem;color:var(--text-light);margin:6px 0 0;line-height:1.5;">Bassins thermaux et décoration intacte.</p>
+              </div>
+            </a>
+
+            <a href="https://visiterpompei.it/maison-des-vettii/" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+              <img id="img-pom-5" src="House.jpg" alt="Maison des Vettii" style="width:100%;height:160px;object-fit:cover;background:#d0b898;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+              <div style="padding:14px;background:#fff;">
+                <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Maison des Vettii</div>
+                <p style="font-size:0.82rem;color:var(--text-light);margin:6px 0 0;line-height:1.5;">Une des plus grandes maisons, conservée en état quasi parfait.</p>
+              </div>
+            </a>
+
+            <a href="https://visiterpompei.it/maison-du-poete-tragique/" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+              <img id="img-pom-6" src="Poete.jpg" alt="Maison du Poète Tragique" style="width:100%;height:160px;object-fit:cover;background:#c0b090;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+              <div style="padding:14px;background:#fff;">
+                <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Maison du Poète Tragique</div>
+                <p style="font-size:0.82rem;color:var(--text-light);margin:6px 0 0;line-height:1.5;">Mosaïque "Attention au chien" et fresques du IIe siècle.</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">12h00 · 🍽 Déjeuner et flânage à Pompéi</div>
+        <div class="timeline-content">La tête encore pleine de 2 000 ans d'histoire — on s'installe en terrasse à Pompéi pour savourer une vraie cuisine napolitaine. Pizza, pasta, limoncello… et on prend le temps de flâner dans la ville moderne avant de repartir.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14h30 · 🚐 Transfert privé depuis Pompéi · payé chauffeur cash · 💶 900 €</div>
+        <div class="timeline-content">Pompéi derrière nous, la mer devant — on rentre à Villa Ligea avec la tête pleine d'images inoubliables. Ce soir, piscine, coucher de soleil sur le golfe et souper préparé par nos chefs. La dolce vita dans toute sa splendeur.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19h30 · 🍲 Souper à la maison · Villa Ligea</div>
+        <div class="timeline-content"></div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;font-weight:600;margin:28px 0 16px;">👨‍🍳 Brigade du soir</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:32px;">
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">👨‍🍳</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Emma &amp; Samuel</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Chefs</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">👨‍🍳</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Philippe</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Sous-chef</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🍹</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Raphaëlle</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Cocktail girl</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🍷</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">François</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Sommelier</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">😋</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Marie-Eve</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Supervisor chip mium mium</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🌸</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Les Catherine</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Préparation de la table</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🫧</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Louis-Philippe &amp; Maxence</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">La plonge</div></div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;font-weight:600;margin:0 0 16px;">🍽 Suggestion de menu · 20 juillet</h3>
+    <p class="prose" style="margin:0 0 16px;">Après une journée à Pompéi, on rentre affamés — un repas généreux, savoureux, tout en saveurs du sud.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Apéro</div><div style="font-weight:600;color:var(--navy);">Antipasti &amp; aperol spritz</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Olives, fromages locaux, crudités, gressins</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--terracotta);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Entrée</div><div style="font-weight:600;color:var(--navy);">Zuppa di pomodoro</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Soupe de tomates fraîches, basilic, croutons à l'ail et huile d'olive</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--navy);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Pasta</div><div style="font-weight:600;color:var(--navy);">Pasta alla Norma</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Aubergines frites, sauce tomate, ricotta salata, basilic frais</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Plat principal</div><div style="font-weight:600;color:var(--navy);">Pollo alla Sorrentina</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Poulet à la tomate, mozzarella fondue, basilic, olives noires</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--terracotta);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Dessert</div><div style="font-weight:600;color:var(--navy);">Sfogliatelle &amp; gelato</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Pâtisseries napolitaines croustillantes &amp; glace artisanale locale</div></div>
+    </div>
+
+
+
+
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 4 — SÉANCE PHOTO -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="photo">
+  <div class="container">
+    <div class="day-badge">📸 21 Juillet</div>
+    <p class="section-eyebrow">Souvenir</p>
+    <h2 class="section-title">Séance Photo avec Chiara</h2>
+    <p class="section-date">Fin de journée · Côte Amalfitaine · Flytographer</p>
+
+    <p class="prose">
+      Pour immortaliser ce voyage de façon authentique, une séance photo en fin de journée avec <strong>Chiara</strong>, photographe locale sur la Côte Amalfitaine. Son style est <em>authentique, romantique et joueur</em> — elle capture la beauté et la personnalité de ses clients avec curiosité et bienveillance. La lumière dorée de fin de journée sur la côte promet des images inoubliables.
+    </p>
+
+    <a href="https://www.instagram.com/kyaranatale/" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;margin:24px 0 28px;box-shadow:0 6px 24px rgba(0,0,0,0.15);max-width:500px;margin-left:auto;margin-right:auto;">
+      <img src="Chiara.jpeg" alt="Chiara — Photographe" style="width:100%;height:340px;object-fit:cover;object-position:center top;display:block;" onerror="this.onerror=null;this.style.background='#c8b890'">
+      <div style="padding:10px 16px;background:#fff;text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:0.95rem;color:var(--navy);font-weight:600;">Chiara</div>
+        <div style="font-size:0.78rem;color:var(--terracotta);margin-top:2px;">Photographe · Côte Amalfitaine &nbsp;·&nbsp; @kyaranatale</div>
+      </div>
+    </a>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.3rem;font-weight:600;margin:32px 0 16px;">🗓 Programme de la séance photo</h3>
+
+    <div class="timeline" style="margin-top:32px;">
+      <div class="timeline-item">
+        <div class="timeline-time">16h30 · 🚗 Départ de la villa · 💵 Payer le chauffeur</div>
+        <div class="timeline-content"></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">17h15 · Point de rencontre · Devant l'entrée des Cloîtres San Francesco</div>
+        <div class="timeline-content">Les Cloîtres San Francesco sont l'un des plus beaux coins de Sorrente — une cour médiévale paisible ceinte d'arches et de colonnes, nichée au cœur de la ville. C'est ici que nous nous retrouvons tous avant le shooting. Difficile de rêver d'un décor plus beau pour commencer. &nbsp;<a href="https://goo.gl/0zHj6k" target="_blank" style="color:var(--terracotta);">📍 Voir sur la carte →</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">17h30 – 20h30 · Shooting · 📍 Sorrento Village</div>
+        <div class="timeline-content">
+          Place animée avec cafés, ruelles et vue panoramique sur la mer turquoise et l'île de Capri.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">20h30 · 🍽 Souper à Sorrento</div>
+        <div class="timeline-content">Profiter de l'ambiance nocturne de Sorrento après la séance photo.</div>
+      </div>
+    </div>
+
+    <div class="alert alert-info" style="margin-top:24px;">
+      <span class="alert-icon">💡</span>
+      <span><strong>Tips</strong> — Pour des suggestions sur quoi porter, consultez le <a href="https://www.flytographer.com/style/" target="_blank" style="color:var(--terracotta);">Guide de Style Flytographer</a>. Laissez à l'hôtel tout ce que vous ne voulez pas voir dans vos photos — sacs à main, chapeaux, vestes. La photographe aura son propre matériel et ne pourra pas vous aider à porter des effets personnels.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 5 — BATEAU -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="bateau">
+  <div class="container">
+    <div class="day-badge">⛵ 22 Juillet</div>
+    <p class="section-eyebrow">Excursion en mer</p>
+    <h2 class="section-title">Journée en Gozzo sur la Côte</h2>
+    <p class="section-date">8 heures · Amalfi Coast Dream · Gozzo 35</p>
+
+    <p class="prose">
+      Une journée complète à bord d'un <strong>Gozzo traditionnel de 35 pieds</strong> avec <strong><a href="https://amalficoastdream.com/gozzo-35/" target="_blank" style="color:var(--terracotta);">Amalfi Coast Dream</a></strong> — la meilleure façon de découvrir la Côte Amalfitaine depuis la mer. Grotte, criques secrètes, eaux turquoise et panoramas inaccessibles par la route.
+    </p>
+
+    <div style="border-radius:16px;overflow:hidden;margin-bottom:32px;box-shadow:0 6px 24px rgba(0,0,0,0.15);">
+      <img src="Gozzo.jpg" alt="Journée en Gozzo" style="width:100%;height:320px;object-fit:cover;display:block;" onerror="this.onerror=null;this.style.background='#a8c8d8'">
+    </div>
+
+    <!-- Timeline journée bateau -->
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;margin-bottom:20px;font-weight:400;">🗓 Programme de la journée</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">9h00 · 🚐 Transfert privé depuis Villa Ligea jusqu'au port de Sorrente &nbsp;<span style="font-size:0.72rem;color:#cc0000;font-weight:600;">⚠️ Retardataires non attendus</span></div>
+        <div class="timeline-content">Cap sur la mer ! ⛵ On quitte la villa pour rejoindre le port de Sorrente — première journée en mer sur la Côte Amalfitaine. Le gozzo nous attend.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Étape 1</div>
+        <div class="timeline-content"><strong>Embarquement à Marina Piccola, Sorrente</strong> — Accueil par le skipper. <a href="https://maps.app.goo.gl/uZjnr4uywifnPXfj9" target="_blank" style="color:var(--terracotta);">📍 Voir le point de rendez-vous</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Étape 2</div>
+        <div class="timeline-content"><strong>Regina Giovanna & Punta Campanella</strong> — Croisière devant ces sites emblématiques pour photos et paysages panoramiques.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Étape 3</div>
+        <div class="timeline-content"><strong>Nerano</strong> — Magnifique village de pêcheurs niché le long de la côte.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Étape 4</div>
+        <div class="timeline-content"><strong>Plage de Tordigliano</strong> — Arrêt baignade facultatif. Pour ceux qui ne nagent pas, l'endroit reste splendide à admirer depuis le bateau.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Étape 5 · 1–2h</div>
+        <div class="timeline-content"><strong>Positano — Temps libre</strong> (durée modulable selon vos envies) — Points de vue, Gentao, shopping, baignade à la plage et plus encore.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Étape 6</div>
+        <div class="timeline-content"><strong>Croisière Côte Amalfitaine</strong> — ~30 min de navigation en passant devant Arienzo, Praiano, le <strong>Fiordo di Furore</strong> et d'autres sites iconiques. Le bateau peut accoster à tout moment pour nager, admirer ou prendre des photos.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Étape 7 · Optionnel</div>
+        <div class="timeline-content"><strong>Grotte Émeraude</strong> — Grotte marine aux eaux vert émeraude. Accès en barque en bois : <strong>14 € / personne</strong>.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">🍽 Déjeuner en bord de mer</div>
+        <div class="timeline-content">Le capitaine vous aide avec la réservation selon votre position, votre faim et vos préférences. Belles options le long de la côte et à <strong>Conca dei Marini</strong>.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Étape 9 · 1–2h</div>
+        <div class="timeline-content"><strong>Amalfi</strong> — Dernier arrêt pour explorer la ville à votre guise.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Retour vers Sorrente</div>
+        <div class="timeline-content"><strong>Îles Li Galli</strong> — Arrêt optionnel pour baignade, snorkeling ou admirer les îles depuis le bateau, avant de rentrer à Marina Piccola.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">18h30 · 🚗 Transfert privé · Port de Sorrente → Villa Ligea · 💵 Payer cash · 320 €</div>
+        <div class="timeline-content"></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19h30 · 🍕 Commande et livraison de pizza</div>
+        <div class="timeline-content"></div>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="info-box-title">🌊 Incontournables en mer</div>
+        <ul>
+          <li>Grotta Bianca — eaux turquoise et photos</li>
+          <li>Punta Campanella — cap emblématique</li>
+          <li>Positano depuis la mer</li>
+          <li>Amalfi et ses falaises</li>
+          <li>Criques et arrêts baignade</li>
+          <li>Falaises et grottes marines</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box-title">🎒 Quoi apporter</div>
+        <ul>
+          <li>Maillot de bain + serviette</li>
+          <li>Crème solaire (indice élevé)</li>
+          <li>Lunettes de soleil et chapeau</li>
+          <li>Chaussures aquatiques recommandées</li>
+          <li>Pique-nique / snacks &amp; eau</li>
+          <li>Appareil photo (protégé de l'humidité)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alert alert-warning">
+      <span class="alert-icon">⚠️</span>
+      <span><strong>Météo &amp; mer :</strong> En juillet, la mer est généralement calme le matin. Vérifiez les conditions météo la veille. En cas de mer forte, l'excursion peut être modifiée ou reportée — confirmez avec Amalfi Coast Dream.</span>
+    </div>
+
+    <div class="alert alert-success">
+      <span class="alert-icon">💬</span>
+      <span><strong>Avis clients :</strong> Le skipper <strong>Flavio</strong> est très souvent cité dans les avis — professionnel, attentionné et passionné. Une expérience unanimement saluée comme le point fort du séjour sur la côte.</span>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-card-info">
+        <div class="contact-card-label">Compagnie nautique</div>
+        <div class="contact-card-name">Amalfi Coast Dream</div>
+        <div class="contact-card-detail">📍 Marina Piccola, Sorrente</div>
+        <div class="contact-card-detail">⭐ 587 avis · 5 étoiles Google</div>
+      </div>
+      <a href="https://amalficoastdream.com/gozzo-35/" class="btn-link" target="_blank">Voir le Gozzo 35 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 5b — JOURNÉE LIBRE 23 JUILLET -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="libre" style="background:linear-gradient(160deg,#fff9f5 0%,#fdf6ee 100%);">
+  <div class="container">
+    <div class="day-badge">🌞 23 Juillet</div>
+    <p class="section-eyebrow">Détente</p>
+    <h2 class="section-title">Journée Libre</h2>
+    <p class="section-date">Villa Ligea · Côte de Sorrente</p>
+
+    <p class="prose">
+      Une journée sans programme imposé — piscine à débordement, terrasse vue mer, excursion spontanée à Positano ou Capri, ou simplement profiter de la villa et de la Côte Amalfitaine à votre rythme.
+    </p>
+
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="info-box-title">🏊 À la villa</div>
+        <ul>
+          <li>Piscine à débordement vue mer</li>
+          <li>Terrasse panoramique</li>
+          <li>Cuisine extérieure & barbecue</li>
+          <li>Repos et détente</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box-title">🗺 Escapades possibles</div>
+        <ul>
+          <li><strong>Positano</strong> — 17 km · ferry ou bus SITA</li>
+          <li><strong>Capri</strong> — ferry depuis Marina Piccola</li>
+          <li><strong>Amalfi</strong> — 30 km · bus SITA ou ferry</li>
+          <li><strong>Ravello</strong> — 38 km · panoramas exceptionnels</li>
+          <li><strong>Sorrento</strong> — 28 km · bus SITA ou taxi</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline" style="margin-top:32px;">
+      <div class="timeline-item">
+        <div class="timeline-time">19h30 · 🍲 Souper à la maison · Villa Ligea</div>
+        <div class="timeline-content"></div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;font-weight:600;margin:28px 0 16px;">👨‍🍳 Brigade du soir</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:32px;">
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">👨‍🍳</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Emma &amp; Samuel</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Chefs</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">👨‍🍳</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Philippe</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Sous-chef</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🍹</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Raphaëlle</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Cocktail girl</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🍷</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">François</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Sommelier</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">😋</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Marie-Eve</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Supervisor chip mium mium</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🌸</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Les Catherine</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Préparation de la table</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🫧</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Louis-Philippe &amp; Maxence</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">La plonge</div></div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;font-weight:600;margin:0 0 16px;">🍽 Suggestion de menu · 23 juillet</h3>
+    <p class="prose" style="margin:0 0 16px;">Dernière soirée à Villa Ligea avant de partir vers Castellabate — on profite une dernière fois de la terrasse, du golfe et de la cuisine du sud.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Apéro</div><div style="font-weight:600;color:var(--navy);">Antipasti &amp; aperol spritz</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Olives, fromages locaux, crudités, gressins</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--terracotta);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Entrée</div><div style="font-weight:600;color:var(--navy);">Burrata e pomodori</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Burrata crémeuse, tomates cerises, basilic frais et huile d'olive</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--navy);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Pasta</div><div style="font-weight:600;color:var(--navy);">Spaghetti alle Vongole</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Palourdes fraîches, ail, persil, vin blanc et huile d'olive</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Plat principal</div><div style="font-weight:600;color:var(--navy);">Branzino al forno</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Bar entier rôti au four, citron, herbes fraîches et légumes grillés</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--terracotta);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Dessert</div><div style="font-weight:600;color:var(--navy);">Delizia al limone</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Gâteau au citron de Sorrente, crème légère et zestes confits</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 6b — 24 JUILLET -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="chef" style="background:linear-gradient(160deg,#fdf6ee 0%,#fff9f5 100%);">
+  <div class="container">
+    <div class="day-badge">🌞 24 Juillet</div>
+    <p class="section-eyebrow">Détente</p>
+    <h2 class="section-title">Journée Libre</h2>
+    <p class="section-date">Villa Ligea · Côte de Sorrente</p>
+
+    <p class="prose">
+      Une journée sans programme imposé — piscine à débordement, terrasse vue mer, excursion spontanée à Positano ou Capri, ou simplement profiter de la villa et de la Côte Amalfitaine à votre rythme.
+    </p>
+
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="info-box-title">🏊 À la villa</div>
+        <ul>
+          <li>Piscine à débordement vue mer</li>
+          <li>Terrasse panoramique</li>
+          <li>Cuisine extérieure &amp; barbecue</li>
+          <li>Repos et détente</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box-title">🗺 Escapades possibles</div>
+        <ul>
+          <li><strong>Positano</strong> — 17 km · ferry ou bus SITA</li>
+          <li><strong>Capri</strong> — ferry depuis Marina Piccola</li>
+          <li><strong>Amalfi</strong> — 30 km · bus SITA ou ferry</li>
+          <li><strong>Ravello</strong> — 38 km · panoramas exceptionnels</li>
+          <li><strong>Sorrento</strong> — 28 km · bus SITA ou taxi</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="prose" style="margin:32px 0 24px;">En fin de journée, le groupe s'agrandit. Jésus, Chantal, Sue et Tibelle arrivent à la villa — et avec eux, l'énergie monte d'un cran. Retrouvailles, embrassades, premier verre sur la terrasse avec vue sur la mer. Ce soir, on est au complet. Et pour marquer ça comme il se doit, un chef, des serveurs et un sommelier ont pris possession de la cuisine de Villa Ligea.</p>
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.5rem;margin:0 0 4px;font-weight:400;">🍽 Dîner Privé à la Villa</h3>
+    <p class="section-eyebrow">Chef, serveurs & sommelier · Villa Ligea</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">19h30–22h00</div>
+        <div class="timeline-content"></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Accueil</div>
+        <div class="timeline-content"><strong>Bruschetta</strong> aux tomates cerises et huile d'olive extra vierge<br><em style="color:var(--terracotta);font-size:0.9rem;">🍾 Gioì Metodo Classico Brut Rosé — San Salvatore (4–5 bouteilles)</em></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Entrée</div>
+        <div class="timeline-content"><strong>Parmigiana di Melanzane</strong> — la vraie recette : mozzarella locale, aubergine frite, basilic, parmesan et sauce tomate<br><em style="color:var(--terracotta);font-size:0.9rem;">🥂 Campania Bianco IGP Madama 891 — Radici Vive (4–5 bouteilles)</em></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Premier plat</div>
+        <div class="timeline-content"><strong>Pasta alle Zucchine</strong> — courgettes frites, basilic frais et fromages locaux mélangés<br><em style="color:var(--terracotta);font-size:0.9rem;">🥂 Costa d'Amalfi Tramonti Bianco 2025 — Tenuta San Francesco (4–5 bouteilles)</em></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Plat principal</div>
+        <div class="timeline-content"><strong>Pescato del Giorno Piccata</strong> — poisson frais du jour, sauce citron, vin blanc et ail, légumes frais sautés<br><em style="color:var(--terracotta);font-size:0.9rem;">🥂 Greco di Tufo Devon 2025 — Antonio Caggiano (4–5 bouteilles)</em></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Dessert</div>
+        <div class="timeline-content"><strong>Tiramisù</strong><br><em style="color:var(--terracotta);font-size:0.9rem;">🍋 Sélection : Limoncello · Passito · Fenouil · Tequila (1 bouteille chacun)</em></div>
+      </div>
+    </div>
+
+    <div class="alert alert-info" style="margin-top:24px;">
+      <span class="alert-icon">👨‍🍳</span>
+      <span>Le dîner est servi à la villa par un chef privé avec serveurs et sommelier — une soirée en famille sous les étoiles de la Côte Amalfitaine.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 6 — VILLES À VISITER -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="villes">
+  <div class="container">
+    <p class="section-eyebrow">Exploration</p>
+    <h2 class="section-title">Villes &amp; Îles à Visiter</h2>
+    <p class="section-date">Positano · Amalfi · Capri</p>
+
+    <p class="prose">
+      La Côte Amalfitaine et ses alentours regorgent de perles à découvrir. Voici les trois incontournables depuis la Villa Ligea — chacune accessible en voiture, bus SITA, ferry ou bateau.
+    </p>
+
+
+    <div style="margin:48px 0 0;">
+      <div style="margin-bottom:20px;">
+      <p class="prose">
+        Village suspendu entre mer et falaise, Positano est l'icône de la côte — ses maisons colorées en cascade vers la mer, ses ruelles pavées et ses terrasses fleuries en font le plus photographié de la région. Magique à l'heure dorée.
+      </p>
+      <div class="info-grid">
+        <div class="info-box">
+          <div class="info-box-title">🎯 Incontournables</div>
+          <ul>
+            <li>Spiaggia Grande — la plage principale du village</li>
+            <li>Plage Fornillo — plus calme, 10 min à pied</li>
+            <li>Grotta dello Smeraldo — grottes aux reflets émeraude</li>
+            <li>Chemin des Dieux (Sentiero degli Dei) — vue panoramique</li>
+            <li>Via dei Mulini — ruelles et boutiques locales</li>
+            <li>Église Santa Maria Assunta — majoliques colorées</li>
+          </ul>
+        </div>
+        <div class="info-box">
+          <div class="info-box-title">💡 Conseils pratiques</div>
+          <ul>
+            <li>Arriver tôt le matin — foule massive en juillet</li>
+            <li>Ferry depuis Sorrente (~35 min) ou bus SITA</li>
+            <li>Voiture : route étroite, stationnement difficile</li>
+            <li>Préférer les restaurants hors du bord de mer (meilleur rapport qualité/prix)</li>
+            <li>Location de kayak disponible depuis Spiaggia Grande</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="ornament">· · ·</div>
+
+    <!-- ── AMALFI ── -->
+    <div style="margin:0 0 0;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+        <div style="background:var(--gold);color:#fff;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">⛪</div>
+        <div>
+          <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.6rem;font-weight:400;line-height:1.1;">Amalfi</h3>
+          <p style="color:var(--text-light);font-size:0.9rem;margin-top:2px;">30 km de la villa · ~45 min en voiture ou ferry</p>
+        </div>
+      </div>
+      <p class="prose">
+        Ville-phare qui donne son nom à toute la côte, Amalfi fut une puissante République Maritime au Moyen Âge. Son centre historique compact se visite à pied, dominé par la majestueuse cathédrale arabo-normande et ses 62 marches. Compter une demi-journée.
+      </p>
+      <div class="info-grid">
+        <div class="info-box">
+          <div class="info-box-title">🎯 Incontournables</div>
+          <ul>
+            <li><strong>Duomo di Sant'Andrea</strong> — cathédrale du XIe s., 62 marches, façade époustouflante</li>
+            <li>Chiostro del Paradiso — cloître médiéval dans la cathédrale</li>
+            <li>Piazza del Duomo — cœur animé de la ville</li>
+            <li>Museo della Carta — musée du papier (spécialité locale)</li>
+            <li>Valle dei Mulini — anciens moulins à papier</li>
+            <li>Plage d'Amalfi — au pied de la ville</li>
+          </ul>
+        </div>
+        <div class="info-box">
+          <div class="info-box-title">💡 Conseils pratiques</div>
+          <ul>
+            <li>Cathédrale gratuite 7h30–10h et 17h–19h30 · sinon billet d'entrée via le cloître</li>
+            <li>Meilleure lumière pour photos : matin ou coucher de soleil (façade illuminée)</li>
+            <li>Ferry depuis Positano ou Sorrente</li>
+            <li>Bus SITA depuis Sant'Agata (route côtière spectaculaire)</li>
+            <li>Prévoir 3–4h pour visiter tranquillement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="ornament">· · ·</div>
+
+    <!-- ── CAPRI ── -->
+    <div style="margin:0 0 0;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+        <div style="background:var(--navy);color:#fff;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">🏝</div>
+        <div>
+          <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.6rem;font-weight:400;line-height:1.1;">Capri</h3>
+          <p style="color:var(--text-light);font-size:0.9rem;margin-top:2px;">Ferry depuis Sorrente · 20–25 min</p>
+        </div>
+      </div>
+      <p class="prose">
+        L'île légendaire du golfe de Naples — falaises vertigineuses, eaux d'un bleu irréel, villas romaines et villages perchés. La Grotte Bleue et les Faraglioni (rochers emblématiques) sont les symboles absolus de l'île. Une journée entière est idéale, arriver tôt est essentiel en juillet.
+      </p>
+      <div class="info-grid">
+        <div class="info-box">
+          <div class="info-box-title">🎯 Incontournables</div>
+          <ul>
+            <li><strong>Grotte Bleue (Grotta Azzurra)</strong> — lumière azurée magique</li>
+            <li>Les Faraglioni — rochers iconiques, vue depuis la côte ou bateau</li>
+            <li>Capri Town &amp; la Piazzetta — cœur mondain de l'île</li>
+            <li>Anacapri — village plus calme, en hauteur</li>
+            <li>Villa San Michele (Anacapri) — jardins panoramiques</li>
+            <li>Monte Solaro — sommet de l'île (télésiège depuis Anacapri)</li>
+          </ul>
+        </div>
+        <div class="info-box">
+          <div class="info-box-title">💡 Conseils ferry &amp; pratiques</div>
+          <ul>
+            <li>Ferries depuis Marina Piccola, Sorrente</li>
+            <li>Premier départ ~7h15 · dernier retour ~19h</li>
+            <li>Réserver ses billets à l'avance (complets en haute saison)</li>
+            <li>Arriver au port 1h avant en juillet</li>
+            <li>Prendre le funiculaire jusqu'à Capri Town à l'arrivée</li>
+            <li>Grotte Bleue : visiter tôt le matin (lumière optimale)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plages Côte Amalfitaine -->
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.4rem;margin:48px 0 20px;font-weight:400;">🏖 Les Plus Belles Plages</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:40px;">
+
+      <a href="https://maps.google.com/maps?q=Spiaggia+Grande+Positano" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+        <img src="https://images.ctfassets.net/rc3dlxapnu6k/1JRNk8Ddo2WqB0RHJhVovE/ef8c4e709e438c0d7edf87db03da98d3/Italien__Amalfik__ste__Spiaggia_Grande-2.jpg" alt="Spiaggia Grande" style="width:100%;height:180px;object-fit:cover;">
+        <div style="padding:16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);font-weight:600;">Spiaggia Grande · Positano</div>
+          <div style="font-size:0.85rem;color:var(--terracotta);margin:4px 0;">17 km · ferry ou bus SITA</div>
+          <p style="font-size:0.85rem;color:var(--text-light);margin:8px 0 0;line-height:1.5;">La plage iconique de Positano — sable sombre, maisons colorées en toile de fond. Animée, mais inoubliable.</p>
+        </div>
+      </a>
+
+      <a href="https://maps.google.com/maps?q=Spiaggia+Fornillo+Positano" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+        <img src="https://images.ctfassets.net/rc3dlxapnu6k/5Bw5xLFcrjqBBuYneNayII/ac7625dea6f2e41e4083b9f2613505d5/Italien__Amalfik__ste__Spiaggia_Fornillo-1-2.jpg" alt="Spiaggia Fornillo" style="width:100%;height:180px;object-fit:cover;">
+        <div style="padding:16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);font-weight:600;">Spiaggia Fornillo · Positano</div>
+          <div style="font-size:0.85rem;color:var(--terracotta);margin:4px 0;">17 km · 10 min à pied depuis Spiaggia Grande</div>
+          <p style="font-size:0.85rem;color:var(--text-light);margin:8px 0 0;line-height:1.5;">Plus calme et familiale que Spiaggia Grande — eaux cristallines, ambiance authentique.</p>
+        </div>
+      </a>
+
+      <a href="https://maps.google.com/maps?q=Marina+del+Cantone+Nerano" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+        <img src="https://images.ctfassets.net/rc3dlxapnu6k/6dwqRYJDjL5TDgiHSWVEeH/d80cd6b7d84ed887d3d11c28feaf9c80/Italien__Amalfik__ste__Marina_di_Cantone-2.jpg" alt="Marina del Cantone" style="width:100%;height:180px;object-fit:cover;">
+        <div style="padding:16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);font-weight:600;">Marina del Cantone</div>
+          <div style="font-size:0.85rem;color:var(--terracotta);margin:4px 0;">8 km de la villa · la plus proche !</div>
+          <p style="font-size:0.85rem;color:var(--text-light);margin:8px 0 0;line-height:1.5;">Criques paisibles, eaux turquoise et transparentes. Point de départ pour la Baia di Ieranto. Idéale pour snorkeling.</p>
+        </div>
+      </a>
+
+      <a href="https://maps.google.com/maps?q=Fiordo+di+Furore" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+        <img src="https://images.ctfassets.net/rc3dlxapnu6k/5QjPNI0QUvsWEEqbmq3EHb/b6d8e22a3b975ef7af4dfd71c24f77af/Italien__Amalfik__ste__Fiordi_di_Furore-2.jpg" alt="Fiordo di Furore" style="width:100%;height:180px;object-fit:cover;">
+        <div style="padding:16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);font-weight:600;">Fiordo di Furore</div>
+          <div style="font-size:0.85rem;color:var(--terracotta);margin:4px 0;">22 km · accessible à pied par escaliers</div>
+          <p style="font-size:0.85rem;color:var(--text-light);margin:8px 0 0;line-height:1.5;">La plage la plus spectaculaire de la côte — encaissée dans une gorge entre deux falaises. Photo garantie.</p>
+        </div>
+      </a>
+
+      <a href="https://maps.google.com/maps?q=Marina+di+Praia+Praiano" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+        <img src="https://images.ctfassets.net/rc3dlxapnu6k/1cvpMKSgApJJtggR9mMoxb/6aaa4707050d710c38cb29d920714f55/Italien__Amalfik__ste__Marina_di_Praia-2.jpg" alt="Marina di Praia" style="width:100%;height:180px;object-fit:cover;">
+        <div style="padding:16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);font-weight:600;">Marina di Praia</div>
+          <div style="font-size:0.85rem;color:var(--terracotta);margin:4px 0;">23 km · accès voiture ou ferry</div>
+          <p style="font-size:0.85rem;color:var(--text-light);margin:8px 0 0;line-height:1.5;">Petite crique secrète entre les falaises, avec un restaurant de fruits de mer directement sur la plage.</p>
+        </div>
+      </a>
+
+      <a href="https://maps.google.com/maps?q=Baia+di+Ieranto" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+        <img src="https://images.ctfassets.net/rc3dlxapnu6k/4MCmCsKxAjyxwFLck8cR9h/f75142bb046bf492c4bb4e0667a13f51/Italien__Amalfik__ste__Bucht_von_IerantoTCG.jpg" alt="Baia di Ieranto" style="width:100%;height:180px;object-fit:cover;">
+        <div style="padding:16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);font-weight:600;">Baia di Ieranto</div>
+          <div style="font-size:0.85rem;color:var(--terracotta);margin:4px 0;">8 km · 45 min à pied ou en bateau</div>
+          <p style="font-size:0.85rem;color:var(--text-light);margin:8px 0 0;line-height:1.5;">Baie protégée, eaux d'un bleu profond face au Vésuve. Accessible depuis Marina del Cantone — la plus belle baignade de la région.</p>
+        </div>
+      </a>
+
+    </div>
+
+</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 7 — DÉPART CASTELLABATE -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="castellabate">
+  <div class="container">
+    <div class="day-badge">🚗 25 Juillet</div>
+    <p class="section-eyebrow">Prochaine étape</p>
+    <h2 class="section-title">Santa Maria di Castellabate</h2>
+    <p class="section-date">Départ le matin depuis Villa Ligea · Cilento</p>
+
+    <div style="border-radius:16px;overflow:hidden;margin-bottom:32px;box-shadow:0 6px 24px rgba(0,0,0,0.15);">
+      <img src="Castalebatte.jpg" alt="Santa Maria di Castellabate" style="width:100%;height:320px;object-fit:cover;display:block;" onerror="this.onerror=null;this.style.background='#a8c4b0'">
+    </div>
+
+    <p class="prose">
+      Santa Maria di Castellabate est un village de pêcheurs préservé dans le <strong>Parc National du Cilento</strong>, au sud de la Côte Amalfitaine — une destination plus sauvage et authentique, avec ses eaux cristallines classées parmi les plus propres d'Italie. Le point d'orgue du séjour : le <strong>mariage du 27 juillet</strong>.
+    </p>
+
+    <div class="timeline" style="margin-bottom:24px;">
+      <div class="timeline-item">
+        <div class="timeline-time">9h30 · 🚐 Transfert privé depuis Villa Ligea jusqu'à Castellabate</div>
+        <div class="timeline-content"></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11h30 · Arrêt à Paestum · Visite à la <a href="https://www.barlotti.it" target="_blank" style="color:inherit;">Ferme Barlotti</a></div>
+        <div class="timeline-content">
+          <img src="Barlotti.jpg" alt="Ferme Barlotti" style="width:100%;max-width:480px;height:200px;object-fit:cover;border-radius:12px;display:block;margin-bottom:10px;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+          Déjeuner et dégustation de produits buffalo.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14h00 · Check-in · Hôtel Garden Riviera</div>
+        <div class="timeline-content">Installation, découverte de l'hôtel, piscine et plage.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">💵 Payer le chauffeur · 💶 1 400 € cash</div>
+        <div class="timeline-content"></div>
+      </div>
+    </div>
+
+    <p class="section-eyebrow">Hébergement</p>
+    <h2 class="section-title">Hôtel Garden Riviera</h2>
+    <div class="photo-gallery">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/c4/97/76/photo2jpg.jpg?w=900&h=500&s=1" alt="Hôtel Garden Riviera – Vue mer">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/1d/d0/6d/hotel-garden-riviera.jpg?w=700&h=400&s=1" alt="Hôtel Garden Riviera – Chambre">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/33/a2/e8/48/caption.jpg?w=1200&h=1200&s=1" alt="Hôtel Garden Riviera – Piscine">
+    </div>
+
+    <p class="prose" style="margin:20px 0;">Niché entre les collines du Cilento et la mer Tyrrhénienne, l'Hôtel Garden Riviera est notre base pour les deux nuits précédant le mariage. Vue sur la Méditerranée, piscine en terrasse, à deux pas de la plage de Castellabate — un cadre parfait pour souffler avant le grand jour.</p>
+
+    <!-- Hôtel -->
+    <div class="contact-card" style="margin-bottom:32px;">
+      <div class="contact-card-info">
+        <div class="contact-card-label">Hébergement · 25–28 juillet</div>
+        <div class="contact-card-name">Hôtel Garden Riviera ★★★★</div>
+        <div class="contact-card-detail">📍 Santa Maria di Castellabate · Cilento</div>
+        <div class="contact-card-detail">📍 Via Fontana Nuova 15, Santa Maria di Castellabate</div>
+        <div class="contact-card-detail">🏊 Piscine vue mer · Restaurant terrasse panoramique · Jardin</div>
+        <div class="contact-card-detail">🍳 Petit-déjeuner inclus · WiFi gratuit · Parking gratuit</div>
+        <div class="contact-card-detail">🚌 Navette gratuite vers la mer (jusqu'à 19h30)</div>
+        <div class="contact-card-detail">🕒 Check-in : dès 14h00 · Check-out : avant 10h00</div>
+      </div>
+      <a href="https://www.hotelgardenriviera.it/" class="btn-link" target="_blank">Site de l'hôtel →</a>
+    </div>
+
+    <div class="day-badge" style="margin-top:40px;">🏨 26 Juillet</div>
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.5rem;margin:12px 0 24px;font-weight:400;">Journée Libre · Castellabate</h3>
+
+    <div style="border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.12);margin-bottom:24px;">
+      <img src="Beach.jpg" alt="Plage de Santa Maria di Castellabate" style="width:100%;height:240px;object-fit:cover;" onerror="this.onerror=null;this.style.background='#a8c4d0'">
+      <div style="padding:12px 16px;background:#fff;">
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Plage de Santa Maria di Castellabate</div>
+        <div style="font-size:0.8rem;color:var(--terracotta);margin-top:2px;">Cilento · Accès par navette gratuite depuis l'hôtel</div>
+      </div>
+    </div>
+
+    <p class="prose">Détente à l'hôtel, piscine avec vue mer, plage de Santa Maria via la navette gratuite (jusqu'à 19h30), exploration du village médiéval de Castellabate (14 min à pied). Pizza à essayer : Pibarò Pizzeria à 6 min à pied (4,7/5).</p>
+
+    <div class="day-badge" style="margin-top:40px;">💒 27 Juillet</div>
+    <p class="section-eyebrow">Le grand jour</p>
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.5rem;margin:12px 0 4px;font-weight:400;">Mariage · Programme de la journée</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">🚌 13h00 · Transport Castellabate → Pompéi aller-retour</div>
+        <div class="timeline-content">Un bus est organisé pour les invités logés à Castellabate.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">15h00 · 💒 Cérémonie religieuse · Pontificio Santuario di Pompei</div>
+        <div class="timeline-content">
+          <!-- Pontificio Santuario photo & history -->
+          <div style="border-radius:12px;overflow:hidden;margin:10px 0 0;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+            <img id="img-santuario" alt="Pontificio Santuario di Pompei"
+              style="width:100%;height:240px;object-fit:cover;display:block;background:#c8b9a0;">
+            <script>
+              fetch('https://en.wikipedia.org/api/rest_v1/page/summary/Shrine_of_the_Virgin_of_the_Rosary_of_Pompei')
+                .then(function(r){return r.json();})
+                .then(function(d){if(d.originalimage&&d.originalimage.source){document.getElementById('img-santuario').src=d.originalimage.source;}else if(d.thumbnail&&d.thumbnail.source){document.getElementById('img-santuario').src=d.thumbnail.source;}})
+                .catch(function(){});
+            </script>
+          </div>
+          <div style="padding:12px 0 4px;">
+            <p style="font-size:0.85rem;color:var(--text-light);line-height:1.65;margin:0 0 10px;">
+              Fondé en 1875 par le bienheureux <strong>Bartolo Longo</strong>, ce sanctuaire marial est l'un des plus visités d'Italie — plus de <strong>4 millions de pèlerins</strong> par an. Consacré en 1891 et élevé au rang de basilique pontificale par <strong>Léon XIII</strong> en 1901, il abrite le célèbre tableau de la Vierge du Rosaire. La façade néoclassique est surmontée d'une statue de la Vierge taillée dans un seul bloc de marbre de Carrare.
+            </p>
+            <a href="https://www.santuario.it/" target="_blank" style="display:inline-block;background:var(--terracotta);color:#fff;padding:7px 16px;border-radius:20px;font-size:0.82rem;font-weight:600;text-decoration:none;">Site officiel du Sanctuaire →</a>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">18h00 – 18h30 · 🥂 Accueil des invités · Tenuta Punta Licosa del Principe di Belmonte</div>
+        <div class="timeline-content">
+          <div style="border-radius:12px;overflow:hidden;margin:10px 0 0;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+            <img src="Tenuta.jpg"
+              alt="Tenuta Punta Licosa del Principe di Belmonte"
+              style="width:100%;height:220px;object-fit:cover;display:block;"
+              onerror="this.onerror=null;this.style.background='#a8c4b0';">
+          </div>
+          <div style="padding:12px 0 4px;">
+            <p style="font-size:0.85rem;color:var(--text-light);line-height:1.65;margin:0 0 10px;">
+              Domaine historique et exclusif du XVIIIe siècle, ancienne réserve de chasse classée au <strong>Patrimoine mondial de l'UNESCO</strong> dans le Cilento. Terrasses panoramiques face à la mer, ruines romaines antiques et îlot privé — un cadre enchanteur pour un aperitivo inoubliable.
+            </p>
+            <a href="https://tenutadipuntalicosa.com/en/" target="_blank" style="display:inline-block;background:var(--terracotta);color:#fff;padding:7px 16px;border-radius:20px;font-size:0.82rem;font-weight:600;text-decoration:none;">Site officiel de la Tenuta →</a>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">18h30 · Aperitivo</div>
+        <div class="timeline-content">Imaginez : le soleil qui descend sur la Méditerranée, un verre de Prosecco à la main, les pieds à quelques mètres d'une mer turquoise d'une pureté absolue. La <strong>Tenuta di Punta Licosa</strong> — 400 hectares de domaine, avec ses ruines romaines, ses oliviers centenaires et son îlot privé face aux eaux du Cilento — nous ouvre exceptionnellement ses portes pour célébrer ce mariage. Un lieu que très peu de gens au monde ont la chance de fouler. Ce soir, c'est nous.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">20h00 · 🍽 Dîner</div>
+        <div class="timeline-content">La nuit tombe sur le Cilento, les chandelles s'allument, la musique monte. Un dîner de mariage face à la Méditerranée — à l'endroit même où les princes de Belmonte festoyaient il y a trois siècles. Ce moment, on ne l'oubliera jamais.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">23h00 · 🎉 Party</div>
+        <div class="timeline-content">Jusqu'aux petites heures du matin ! 🚂 Petit train du chef, la locomotive.</div>
+      </div>
+    </div>
+
+    <div class="alert alert-info">
+      <span class="alert-icon">🌊</span>
+      <span><strong>Le Cilento :</strong> Classé au Patrimoine mondial de l'UNESCO, le Parc du Cilento offre des paysages côtiers sauvages, des villages médiévaux perchés et des eaux parmi les plus transparentes de la Méditerranée.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 9 — SICILE -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="sicile" style="background:linear-gradient(160deg,#fff9f5 0%,#fdf6ee 100%);">
+  <div class="container">
+    <div class="day-badge">🚆 28 Juillet</div>
+    <p class="section-eyebrow">Prochaine étape</p>
+    <h2 class="section-title">Altavilla Milicia · Sicile</h2>
+    <p class="section-date">En train depuis Castellabate · Traversée du Détroit de Messine à bord du ferry</p>
+
+    <p class="prose">
+      Altavilla Milicia est une station balnéaire paisible sur la côte tyrrhénienne de la Sicile, à <strong>20 km à l'est de Palerme</strong>. Fondée au XVIIe siècle par la famille normande d'Hauteville, elle offre des eaux cristallines, des plages familiales et une atmosphère authentiquement sicilienne. À portée se trouvent Palerme (20 min), Cefalù (50 km) et le Parc naturel des Madonies (UNESCO).
+    </p>
+
+    <!-- Route -->
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">8h30 · Check-out Hôtel Garden Riviera &nbsp;<span style="font-size:0.72rem;color:#cc0000;font-weight:600;">⚠️ Retardataires non attendus</span></div>
+        <div class="timeline-content">Transport privé vers la <strong>Gare d'Agropoli-Castellabate</strong> (~15 min). &nbsp;💵 Payer le chauffeur cash · 240 €</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">10h17 · Départ Agropoli</div>
+        <div class="timeline-content"><strong>🚆 Train — Gare d'Agropoli-Castellabate → Sapri</strong> · 2ème classe · Arrivée prévue à <strong>11h15</strong>.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11h43 · Départ Sapri</div>
+        <div class="timeline-content"><strong>🚆 Intercity 723 · 1ère Classe</strong> — Sapri → Messina central station · Arrivée prévue à <strong>15h35</strong>.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14h00 · Arrivée à San Giovanni</div>
+        <div class="timeline-content"><strong>🚢 Traversée du Détroit de Messine</strong> — Le train embarque à bord du ferry.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time">15h35 · Arrivée à Messina</div>
+        <div class="timeline-content"><strong>🚗 Avis · Location de voiture</strong> — Prise en charge du véhicule à Messina. Conducteurs désignés : François, Samuel, Maxence et Louis-Philippe.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-time">18h00 · 🛒 Arrêt épicerie · Carrefour Market</div>
+        <div class="timeline-content">Dernière chance de faire le plein avant Altavilla ! On charge la voiture : eau, fruits, snacks, rosé sicilien… La Sicile commence ce soir. 🍋 · 📍 Piazza Cairoli 36/39, Messina</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19h00 · 🏠 Arrivée à Olivaus · Notre maison · Altavilla Milicia</div>
+        <div class="timeline-content">Installation et premier aperçu de la Sicile.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19h30 · 🍽 Souper à la maison · Olivaus</div>
+        <div class="timeline-content"></div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;font-weight:600;margin:28px 0 16px;">👨‍🍳 Brigade du soir</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:32px;">
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">👨‍🍳</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Emma &amp; Samuel</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Chefs</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">👨‍🍳</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Philippe</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Sous-chef</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🍹</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Raphaëlle</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Cocktail girl</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🍷</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">François</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Sommelier</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">😋</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Marie-Eve</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Supervisor chip mium mium</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🌸</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Les Catherine</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">Préparation de la table</div></div>
+      <div style="padding:14px;background:#fff;border-radius:14px;border:1.5px solid #e8e0d0;"><div style="font-size:1.3rem;margin-bottom:4px;">🫧</div><div style="font-weight:700;color:var(--navy);font-size:0.88rem;">Louis-Philippe &amp; Maxence</div><div style="font-size:0.78rem;color:var(--terracotta);font-weight:600;margin-top:2px;">La plonge</div></div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.2rem;font-weight:600;margin:0 0 16px;">🍽 Suggestion de menu · 28 juillet</h3>
+    <p class="prose" style="margin:0 0 16px;">Premier soir en Sicile — on inaugure Olivaus avec les saveurs de l'île. Simple, généreux, sicilien.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Apéro</div><div style="font-weight:600;color:var(--navy);">Antipasti siciliani</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Olives, caponata, fromage pecorino, amandes grillées</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--terracotta);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Entrée</div><div style="font-weight:600;color:var(--navy);">Arancini maison</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Boulettes de riz frites, farce ragù ou mozzarella</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--navy);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Pasta</div><div style="font-weight:600;color:var(--navy);">Pasta alla Norma</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Aubergines frites, sauce tomate, ricotta salata, basilic frais</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Plat principal</div><div style="font-weight:600;color:var(--navy);">Pesce spada alla ghiotta</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Espadon braisé, tomates, câpres, olives et raisins secs</div></div>
+      <div style="padding:16px;background:#fff;border-radius:14px;border-left:4px solid var(--terracotta);box-shadow:0 2px 10px rgba(0,0,0,0.05);"><div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:6px;">Dessert</div><div style="font-weight:600;color:var(--navy);">Cannoli siciliani</div><div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;">Tubes croustillants, crème de ricotta sucrée, éclats de pistache</div></div>
+    </div>
+
+    <p class="section-eyebrow">Hébergement</p>
+    <h2 class="section-title">Olivaus</h2>
+    <p class="section-date">Altavilla Milicia · Sicile</p>
+
+    <div class="photo-gallery" style="margin-top:24px;">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-27545878/original/bf53ca77-2b76-4dd6-a724-d79fde202f05.jpeg?im_w=720" alt="Olivaus - Vue extérieure">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-27545878/original/681ade9a-f39b-48e2-a39e-967273f2a38a.jpeg?im_w=720" alt="Olivaus - Piscine">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-27545878/original/7c37999f-c2e0-4a3e-8d4c-f2b48e68f5ac.jpeg?im_w=720" alt="Olivaus - Intérieur">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-27545878/original/58b7aa6e-dbfa-4699-9000-993b981ffd56.jpeg?im_w=720" alt="Olivaus - Terrasse">
+      <img src="https://a0.muscache.com/im/pictures/695595fd-1534-4a62-b9b1-abcba45a6331.jpg?im_w=720" alt="Olivaus - Jardin">
+    </div>
+
+    <p class="prose" style="margin:20px 0 24px;">Bienvenue à Olivaus — notre maison sicilienne pour quatre nuits. Une villa de 500 m² perchée entre mer et oliveraie, avec une piscine à l'eau salée, une terrasse de 200 m² et cinq chambres avec salle de bain privée. Le genre d'endroit où on pose les valises et où on ne veut plus repartir. La Sicile commence ici.</p>
+
+    <div class="info-grid" style="margin-top:24px;">
+      <div class="info-box">
+        <div class="info-box-title">🏡 La maison</div>
+        <ul>
+          <li>500 m² · 5 chambres avec salle de bain privée</li>
+          <li>Cuisine équipée · Salle à manger · Salon avec cheminée</li>
+          <li>Piscine eau salée (sans chlore) · 6 m × 13 m</li>
+          <li>Terrasse pavée ~200 m² · Grand jardin</li>
+          <li>Balcon enveloppant à l'étage</li>
+          <li>7 hectares d'oliveraie · 2 forêts de pins</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box-title">🌊 Aux alentours</div>
+        <ul>
+          <li>Plage Torre Normanna — 10 min en voiture</li>
+          <li>San Nicola L'Arena — marina, location de bateaux</li>
+          <li>Site archéologique de Solunto</li>
+          <li>Villas baroques de Bagheria · Musée Guttuso</li>
+          <li>Palerme — 20 min</li>
+          <li>Cefalù — ~50 km</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-card" style="margin-top:24px;">
+      <div class="contact-card-info">
+        <div class="contact-card-label">Hébergement · 28 juillet – 1er août</div>
+        <div class="contact-card-name">Olivaus</div>
+        <div class="contact-card-detail">📍 Via Torre Marroia V · Altavilla Milicia, Sicilia 90010</div>
+        <div class="contact-card-detail">🕒 Check-in : dès 16h00 (28 juil.) · Check-out : avant 10h00 (1er août)</div>
+        <div class="contact-card-detail">🏡 500 m² · 5 chambres · 5 salles de bain · Piscine eau salée</div>
+      </div>
+      <a href="https://www.airbnb.ca/rooms/27545878" class="btn-link" target="_blank">Voir l'annonce →</a>
+    </div>
+
+    <!-- 29 juillet — No Mafia Tour -->
+    <div class="day-badge" style="margin-top:48px;">🚶 29 Juillet</div>
+    <p class="section-eyebrow">Visite de Palerme</p>
+    <h2 class="section-title"><a href="https://www.tripadvisor.com/MptUrl?p=AFpYSrfVGdmE4QdYkHUl3nYg5VltyXxuhrerpGp%2F%2FH03uGoJQCqExt8GKaFJO0UuyXCS36Qh6ap9zSPQGdbvZAULXgnx9jzbuUegsgLwi2S8FAZZoYqsM6LRjbt6H89GtfPTvHuB7ONh5nAIkbKhJh%2FLGTUPjFmIaID3JJBRVePJUDAorKvbccZqIhjhKyaAhw0VFe3kyyQCroXij3Csd%2BLNdXjlHc3rodBMoGlX5gFAXreIkZGQO7SdXvZAmPKqH6%2F0GllQtWGrMAlR%2FuGRQiHUF7k02NpgHclyI56hOF0wQJgIc3aAg48SNryyVfAnKXxHMLHxPLu3c%2Fr4UqZ1I5mX6g8RgWOYNo6BrR8qltUyBgWo7efBznj%2BVMJVjii%2FvN1y5jVF%2Fg566mAAzQuKzSSRssechL0pQluYMwfv4CyYJTcq5QnjszZTKcKSZwe5B%2Bln4HaV7brR5QX4eqEC3f%2Fp5pvqFCSzu7GK1JtBEvXg31gzvOrbVyxWp1UI0082fmlpvLi2Y9glSUJ4c%2Bi4uo9uHgu1PPTdeGTvBE1u6xCXXRFYSt%2FpjeG1B2RlKbfu4hUqZtIdchm2c7wWYpYIId8LgxD3uGGdtR90b6Sf2%2Fs2IigtDgj6OWcHZKLwc0MS8A%3D%3D" target="_blank" style="color:inherit;text-decoration:none;">🚫 No Mafia Walking Tour</a></h2>
+    <p class="section-date">3 heures · Palermo No Mafia · Palerme</p>
+
+    <div style="border-radius:16px;overflow:hidden;margin:24px 0 32px;box-shadow:0 6px 24px rgba(0,0,0,0.15);">
+      <img src="Palerme.jpg" alt="Palerme" style="width:100%;height:320px;object-fit:cover;display:block;" onerror="this.onerror=null;this.style.background='#c8b890'">
+    </div>
+
+    <p class="prose">
+      Palerme, avec son mélange de haute culture, de théâtre de rue et d'élégance patinée, se prête magnifiquement à une visite à pied. Ce tour en petit groupe se distingue en explorant l'histoire de la Mafia sicilienne et du mouvement anti-mafia. Parcourez le centre historique de Palerme avec un guide et rencontrez des commerçants locaux qui résistent aux rackets de protection de la Mafia.
+    </p>
+
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.3rem;font-weight:600;margin:32px 0 16px;">🗓 Programme pour le tour</h3>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">9h00 · Départ de la maison</div>
+        <div class="timeline-content">Direction Palerme ! 🚗 La capitale sicilienne nous attend — baroque, chaotique, passionnante. Aujourd'hui on marche dans les pas de ceux qui ont dit non à la mafia. Une ville qui a du caractère comme nulle autre en Italie.</div>
+        </div>
+      <div class="timeline-item">
+        <div class="timeline-time">10h00 · Point de rendez-vous · P.za Giuseppe Verdi</div>
+        <div class="timeline-content">
+          <img src="Piazza.jpg" alt="P.za Giuseppe Verdi" style="width:100%;height:140px;object-fit:cover;border-radius:10px;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+        </div>
+      </div>
+    </div>
+
+    <!-- Itinéraire du tour -->
+    <div style="background:var(--cream);border-radius:16px;padding:24px 28px;margin:24px 0 32px;">
+
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;">
+        <div style="min-width:28px;height:28px;background:var(--terracotta);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.75rem;font-weight:700;margin-top:2px;">1</div>
+        <div style="flex:1;">
+          <div style="font-weight:600;color:var(--navy);font-size:0.9rem;">Teatro Massimo <span style="font-weight:400;font-size:0.8rem;color:var(--text-light);">· Arrêt · 30 minutes</span></div>
+          <img src="Theatro.jpg" alt="Teatro Massimo" style="width:100%;height:140px;object-fit:cover;border-radius:10px;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+          <p style="font-size:0.82rem;color:var(--text-light);line-height:1.6;margin:8px 0 6px;">Le plus grand opéra d'Italie et le troisième d'Europe — inauguré en 1897 après 22 ans de construction. Son escalier monumental a servi de décor à la scène finale du <em>Parrain III</em>. Un symbole absolu de Palerme.</p>
+          <a href="https://www.teatromassimo.it/" target="_blank" style="display:inline-block;background:var(--terracotta);color:#fff;padding:6px 14px;border-radius:20px;font-size:0.78rem;font-weight:600;text-decoration:none;">Site officiel →</a>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;">
+        <div style="min-width:28px;height:28px;background:var(--terracotta);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.75rem;font-weight:700;margin-top:2px;">2</div>
+        <div style="flex:1;">
+          <div style="font-weight:600;color:var(--navy);font-size:0.9rem;">Wall of Legality <span style="font-weight:400;font-size:0.8rem;color:var(--text-light);">· Arrêt · 10 minutes — <em>passage par le Marché de Capo</em></span></div>
+          <img src="Legal.jpg" alt="Wall of Legality" style="width:100%;height:140px;object-fit:cover;border-radius:10px;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+          <p style="font-size:0.82rem;color:var(--text-light);line-height:1.6;margin:8px 0 0;">Une fresque monumentale dédiée aux victimes de la mafia — magistrats, policiers, journalistes, citoyens ordinaires. Leurs noms gravés sur un mur, pour ne jamais oublier. Un moment fort, entre le marché de Capo et le palais de justice.</p>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;">
+        <div style="min-width:28px;height:28px;background:var(--terracotta);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.75rem;font-weight:700;margin-top:2px;">3</div>
+        <div style="flex:1;">
+          <div style="font-weight:600;color:var(--navy);font-size:0.9rem;">Palazzo di Giustizia <span style="font-weight:400;font-size:0.8rem;color:var(--text-light);">· Arrêt · 15 minutes</span></div>
+          <img src="Tribunal.jpg" alt="Palazzo di Giustizia" style="width:100%;height:140px;object-fit:cover;border-radius:10px;margin:8px 0;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+          <p style="font-size:0.82rem;color:var(--text-light);line-height:1.6;margin:0 0 6px;">Le palais de justice de Palerme — là où s'est tenu le plus grand procès antimafia de l'histoire : le <strong>Maxi Procès</strong> de 1986–1987. Plus de 400 membres de Cosa Nostra condamnés. Giovanni Falcone et Paolo Borsellino ont risqué et perdu leur vie pour ça.</p>
+          <a href="https://tribunale.palermo.giustizia.it/" target="_blank" style="display:inline-block;background:var(--terracotta);color:#fff;padding:6px 14px;border-radius:20px;font-size:0.78rem;font-weight:600;text-decoration:none;">Site officiel →</a>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;">
+        <div style="min-width:28px;height:28px;background:var(--terracotta);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.75rem;font-weight:700;margin-top:2px;">4</div>
+        <div style="flex:1;">
+          <div style="font-weight:600;color:var(--navy);font-size:0.9rem;">Cathédrale de Palerme <span style="font-weight:400;font-size:0.8rem;color:var(--text-light);">· Arrêt · 15 minutes</span></div>
+          <img src="Cathédrale.jpg" alt="Cathédrale de Palerme" style="width:100%;height:140px;object-fit:cover;border-radius:10px;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+          <p style="font-size:0.82rem;color:var(--text-light);line-height:1.6;margin:8px 0 6px;">Un chef-d'œuvre architectural millénaire — normande, arabe, gothique, baroque. Fondée en 1185, elle porte en elle 900 ans d'histoire sicilienne. Classée au <strong>Patrimoine mondial de l'UNESCO</strong>.</p>
+          <a href="https://www.cattedrale.palermo.it/" target="_blank" style="display:inline-block;background:var(--terracotta);color:#fff;padding:6px 14px;border-radius:20px;font-size:0.78rem;font-weight:600;text-decoration:none;">Site officiel →</a>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;">
+        <div style="min-width:28px;height:28px;background:var(--terracotta);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.75rem;font-weight:700;margin-top:2px;">5</div>
+        <div style="flex:1;">
+          <div style="font-weight:600;color:var(--navy);font-size:0.9rem;">Cappadonia Gelati 🍦 <span style="font-weight:400;font-size:0.8rem;color:var(--text-light);">· Arrêt · 15 minutes</span></div>
+          <img src="Gelati.jpg" alt="Cappadonia Gelati" style="width:100%;height:140px;object-fit:cover;border-radius:10px;margin:8px 0;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+          <p style="font-size:0.82rem;color:var(--text-light);line-height:1.6;margin:0 0 6px;">L'une des meilleures gelaterias de Palerme — pistache de Bronte, fraise de Sicile, cannoli… Une pause obligatoire en plein cœur de la ville. Parce qu'on mérite bien ça après avoir parlé de la mafia.</p>
+          <a href="https://www.instagram.com/cappadoniagelateria/" target="_blank" style="display:inline-block;background:var(--terracotta);color:#fff;padding:6px 14px;border-radius:20px;font-size:0.78rem;font-weight:600;text-decoration:none;">Instagram →</a>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;">
+        <div style="min-width:28px;height:28px;background:var(--terracotta);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.75rem;font-weight:700;margin-top:2px;">6</div>
+        <div style="flex:1;">
+          <div style="font-weight:600;color:var(--navy);font-size:0.9rem;">Palazzo Pretorio · Municipio di Palermo <span style="font-weight:400;font-size:0.8rem;color:var(--text-light);">· Arrêt · 15 minutes</span></div>
+          <img src="Ville.jpg" alt="Palazzo Pretorio" style="width:100%;height:140px;object-fit:cover;border-radius:10px;margin:8px 0;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+          <p style="font-size:0.82rem;color:var(--text-light);line-height:1.6;margin:0 0 6px;">L'hôtel de ville de Palerme, surnommé <em>"Palazzo delle Aquile"</em> pour les aigles de pierre qui ornent sa façade. Construit au XIVe siècle, il domine la magnifique Piazza Pretoria — surnommée la <em>"Piazza della Vergogna"</em> (la place de la honte) à cause de ses statues de nus.</p>
+          <a href="https://www.comune.palermo.it/" target="_blank" style="display:inline-block;background:var(--terracotta);color:#fff;padding:6px 14px;border-radius:20px;font-size:0.78rem;font-weight:600;text-decoration:none;">Site officiel →</a>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:12px;">
+        <div style="min-width:28px;height:28px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.75rem;font-weight:700;margin-top:2px;">🏁</div>
+        <div style="flex:1;">
+          <div style="font-weight:600;color:var(--navy);font-size:0.9rem;">Fin du tour · Fontaine Pretoria</div>
+          <img src="fontaine.jpg" alt="Fontaine Pretoria" style="width:100%;height:140px;object-fit:cover;border-radius:10px;margin:8px 0;" onerror="this.onerror=null;this.style.background='#d4c8a8'">
+          <p style="font-size:0.82rem;color:var(--text-light);line-height:1.6;margin:0 0 8px;">La fontaine la plus célèbre de Palerme — 48 statues de marbre blanc représentant dieux, nymphes et animaux, commandée par un noble florentin au XVIe siècle. Le tour se termine ici, dans l'un des plus beaux espaces de la ville. Trois heures qui changent le regard sur la Sicile.</p>
+          <a href="https://maps.google.com/maps?q=Fontana+Pretoria+Palermo" target="_blank" style="display:inline-block;background:var(--terracotta);color:#fff;padding:7px 16px;border-radius:20px;font-size:0.82rem;font-weight:600;text-decoration:none;">Voir sur Maps →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline" style="margin:24px 0;">
+      <div class="timeline-item">
+        <div class="timeline-time">13h00 – 15h00 · 🍽 Lunch et promenade à Palerme</div>
+        <div class="timeline-content">Palerme a faim — et nous aussi. 🍽 Quelques adresses et idées pour profiter au max de ces deux heures :
+
+          <div style="margin-top:14px;display:flex;flex-direction:column;gap:10px;">
+            <div style="background:var(--cream);border-radius:10px;padding:12px 14px;">
+              <div style="font-weight:600;color:var(--navy);font-size:0.88rem;">🍝 Où manger</div>
+              <div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;line-height:1.6;">Trattoria Ai Cascinari (cuisine sicilienne authentique) · Osteria dei Vespri (raffiné, en face du palais) · Street food : <em>pane con la milza</em> (sandwich à la rate — osez !) ou <em>arancine</em> au marché de Ballarò.</div>
+            </div>
+            <div style="background:var(--cream);border-radius:10px;padding:12px 14px;">
+              <div style="font-weight:600;color:var(--navy);font-size:0.88rem;">🏛 À ne pas manquer à deux pas</div>
+              <div style="font-size:0.82rem;color:var(--text-light);margin-top:4px;line-height:1.6;"><strong>Chapelle Palatine</strong> — une des merveilles de la Méditerranée, cachée au cœur du Palais des Normands (UNESCO). Mosaïques byzantines à couper le souffle. · <strong>Marché de Ballarò</strong> — le plus vieux et le plus vivant de la ville. Fruits exotiques, épices, poissons entiers posés sur la glace, vendeurs qui crient. Un chaos magnifique. · <strong>Piazza Quattro Canti</strong> — le carrefour baroque au cœur de Palerme, quatre façades concaves ornées de fontaines et de statues. Idéal pour une photo de groupe.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-bottom:32px;">
+      <a href="https://www.federicosecondo.org/en/palatine-chapel/" target="_blank" style="text-decoration:none;display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+        <img src="Chapelle.jpg" alt="Chapelle Palatine" style="width:100%;height:180px;object-fit:cover;background:#c8b890;" onerror="this.onerror=null;this.style.background='#c8b890'">
+        <div style="padding:12px 16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Chapelle Palatine</div>
+          <div style="font-size:0.8rem;color:var(--terracotta);margin-top:2px;">Palais des Normands · UNESCO</div>
+        </div>
+      </a>
+      <a href="https://maps.google.com/maps?q=Mercato+di+Ballarò+Palermo" target="_blank" style="text-decoration:none;display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+        <img id="img-pal-3" src="Market.jpg" alt="Marché de Ballarò" style="width:100%;height:180px;object-fit:cover;background:#c8a878;" onerror="this.onerror=null;this.style.background='#c8a878'">
+        <div style="padding:12px 16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Marché de Ballarò</div>
+          <div style="font-size:0.8rem;color:var(--terracotta);margin-top:2px;">Le plus ancien marché de Palerme</div>
+        </div>
+      </a>
+      <a href="https://maps.google.com/maps?q=Piazza+Quattro+Canti+Palermo" target="_blank" style="text-decoration:none;display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+        <img src="Piazza.jpg" alt="Piazza Quattro Canti" style="width:100%;height:180px;object-fit:cover;background:#c8b8a0;" onerror="this.onerror=null;this.style.background='#c8b8a0'">
+        <div style="padding:12px 16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:600;">Piazza Quattro Canti</div>
+          <div style="font-size:0.8rem;color:var(--terracotta);margin-top:2px;">Le carrefour baroque au cœur de Palerme</div>
+        </div>
+      </a>
+    </div>
+
+        <!-- ══ 30 Juillet — Fattoria Augustali ══ -->
+    <div class="day-badge" style="margin-top:40px;">🍝 30 Juillet</div>
+    <p class="section-eyebrow">Découverte sicilienne</p>
+    <p class="prose" style="margin:0 0 16px;">Aujourd'hui, la Sicile se laisse découvrir autrement — loin des plages et des ruines. On plonge dans ses racines : l'huile d'olive pressée à froid, les pâtes roulées à la main, les arômes de basilic et d'agrumes qui flottent entre les oliviers. La Bio Fattoria Augustali, c'est 25 hectares de terres siciliennes cultivées depuis des générations. Une expérience sensorielle que peu de voyageurs ont la chance de vivre.</p>
+    <div class="timeline" style="margin:16px 0;">
+      <div class="timeline-item">
+        <div class="timeline-time">14h30 · 🚗 Départ de la maison · Direction Fattoria Augustali</div>
+        <div class="timeline-content"></div>
+      </div>
+    </div>
+    <div class="timeline" style="margin:16px 0;">
+      <div class="timeline-item">
+        <div class="timeline-time">16h00 · Tour · Gouttes de Tradition · Huile d'Olive Vierge Extra</div>
+        <div class="timeline-content"></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-bottom:24px;">
+      <div style="border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+        <img src="https://www.augustali.it/shop/wp-content/uploads/2021/04/fattoria-augustali_-experience_olive-6.jpg" alt="Oliveraie Augustali" style="width:100%;height:170px;object-fit:cover;">
+      </div>
+      <div style="border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+        <img src="https://www.augustali.it/shop/wp-content/uploads/2021/04/fattoria-augustali_-experience_olive-2.jpg" alt="Dégustation huile d'olive" style="width:100%;height:170px;object-fit:cover;">
+      </div>
+      <div style="border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+        <img src="https://www.augustali.it/shop/wp-content/uploads/2021/04/fattoria-augustali_-experience_olive-5.jpg" alt="Produits de la ferme" style="width:100%;height:170px;object-fit:cover;">
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">🌿 Balade dans les oliveraies & vergers</div>
+        <div class="timeline-content"><strong>🌿 Balade dans les oliveraies & vergers</strong> — Promenade guidée parmi les oliviers, vignes et agrumes de la famille. Découverte du jardin d'herbes aromatiques.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Atelier tapenade</div>
+        <div class="timeline-content"><strong>🫒 Préparation du paté d'olives</strong> — Chaque participant prépare sa propre tapenade avec les olives de la ferme — activité idéale pour les enfants aussi.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Dégustation</div>
+        <div class="timeline-content"><strong>🍷 Plateau de spécialités siciliennes & vins</strong> — Dégustation de 2 variétés d'huile d'olive extra vierge fraîchement pressée, plateau de 5 spécialités gastronomiques de la ferme (miel, confiture d'agrumes, tapenade, fromage), et 2 vins IGP / DOC Sicilia.</div>
+      </div>
+    </div>
+
+
+
+
+    <div class="timeline" style="margin:16px 0;">
+      <div class="timeline-item">
+        <div class="timeline-time">17h30 · Tour · Les Mains dans la Pâte</div>
+        <div class="timeline-content"></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-bottom:28px;">
+      <div style="border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+        <img src="https://www.augustali.it/shop/wp-content/uploads/2021/02/foto-pizza.jpg" alt="Fattoria Augustali" style="width:100%;height:180px;object-fit:cover;">
+      </div>
+      <div style="border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+        <img src="https://www.augustali.it/shop/wp-content/uploads/2024/10/augustali-le-mani-in-pasta1.jpg" alt="Atelier pâtes" style="width:100%;height:180px;object-fit:cover;">
+      </div>
+      <div style="border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+        <img src="https://www.augustali.it/shop/wp-content/uploads/2024/10/augustali-pranzo-in-fattoria.jpg" alt="Déjeuner à la ferme" style="width:100%;height:180px;object-fit:cover;">
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">Atelier</div>
+        <div class="timeline-content"><strong>🍝 Atelier pâtes fraîches siciliennes</strong> — Apprendre à préparer des pâtes traditionnelles avec des ingrédients locaux frais sous la guidance d'experts. Activité pour tout le groupe, enfants inclus.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Visite de la cave</div>
+        <div class="timeline-content"><strong>🍷 Visite de la cave & dégustation</strong> — Tour de la cave avec dégustation d'un vin IGP ou DOC Sicilia. Dégustation de produits de la ferme : miel, huile d'olive extra vierge, confitures d'agrumes et tapenade d'olives.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Souper</div>
+        <div class="timeline-content"><strong>🍽 Souper complet à la ferme</strong> — Menu adulte : 6 antipasti, 1 primo, 1 secondo avec accompagnement, dessert maison, vin, eau et café. Menu enfants : pâtes fraîches à la sauce tomate et escalope avec accompagnement.</div>
+      </div>
+    </div>
+
+    <div class="contact-card" style="margin-top:28px;">
+      <div class="contact-card-info">
+        <div class="contact-card-label">Expérience agrotouristique · <a href="https://www.augustali.it/shop/en/prodotto/le-mani-in-pasta/" target="_blank" style="color:var(--terracotta);">augustali.it</a></div>
+        <div class="contact-card-name">Bio Fattoria Augustali</div>
+        <div class="contact-card-detail">📍 S.S. 113 km. 318,700 · c.da Bosco Falconeria · Alcamo — Partinico, Sicile</div>
+        <div class="contact-card-detail">📞 Finella : <a href="https://wa.me/393396132334" target="_blank" style="color:var(--terracotta);">+39 339 613 2334</a> · Beatriz : <a href="https://wa.me/393289093231" target="_blank" style="color:var(--terracotta);">+39 328 909 3231</a> (WhatsApp)</div>
+        <div style="margin-top:12px;"><a href="https://www.augustali.it" target="_blank" style="display:inline-block;background:var(--terracotta);color:#fff;padding:7px 16px;border-radius:20px;font-size:0.82rem;font-weight:600;text-decoration:none;">Site officiel →</a></div>
+      </div>
+    </div>
+
+
+    <div class="day-badge" style="margin-top:48px;">🌴 31 Juillet</div>
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.5rem;margin:12px 0 12px;font-weight:400;">Journée Libre · Sicile</h3>
+    <p class="prose" style="margin:0 0 24px;">La Sicile, c'est vaste — et aujourd'hui, elle est toute à vous. Pas de programme imposé, pas d'horaire à respecter. Plongez dans la piscine d'Olivaus, partez explorer Cefalù ou ses plages, flemmarder sous les oliviers avec un verre de vin sicilien. C'est ça aussi, les vacances.</p>
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="info-box-title">🏊 À Olivaus</div>
+        <ul>
+          <li>Piscine eau salée · 6 m × 13 m</li>
+          <li>Terrasse &amp; jardin · 7 ha d'oliveraie</li>
+          <li>Repos avant le départ pour Rome</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box-title">🗺 Lieux à découvrir</div>
+        <ul>
+          <li><strong>Cefalù</strong> — ~50 km · vieille ville médiévale &amp; plages</li>
+          <li><strong>Monreale</strong> — 25 km · cathédrale aux mosaïques byzantines (UNESCO)</li>
+          <li><strong>Erice</strong> — 100 km · village médiéval perché sur un piton rocheux</li>
+          <li><strong>Agrigento</strong> — 130 km · Vallée des Temples, ruines grecques exceptionnelles</li>
+          <li><strong>Taormina</strong> — 170 km · théâtre grec antique avec vue sur l'Etna</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Plages Sicile 31 juillet -->
+    <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.4rem;margin:40px 0 20px;font-weight:400;">🏖 Les Plus Belles Plages et les plus Beaux Endroits</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:40px;">
+
+      <a href="https://maps.google.com/maps?q=Torre+Normanna+Altavilla+Milicia" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+        <img src="https://torrenormanna.it/wp-content/uploads/2017/06/spiaggia-elicottero-torre-normanna.jpg" alt="Torre Normanna" style="width:100%;height:180px;object-fit:cover;">
+        <div style="padding:16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);font-weight:600;">Torre Normanna · Altavilla Milicia</div>
+          <div style="font-size:0.85rem;color:var(--terracotta);margin:4px 0;">10 min en voiture d'Olivaus</div>
+          <p style="font-size:0.85rem;color:var(--text-light);margin:8px 0 0;line-height:1.5;">La plage locale — eaux cristallines, « Ombelico di Venere » (rocher en forme de nombril de Vénus), une des photos emblématiques de Sicile.</p>
+        </div>
+      </a>
+
+      <a href="https://maps.google.com/maps?q=Mondello+Beach+Palermo" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+        <img src="https://www.savoringitaly.com/wp-content/uploads/2024/01/Mondello.jpg" alt="Mondello" style="width:100%;height:180px;object-fit:cover;">
+        <div style="padding:16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);font-weight:600;">Mondello · Palerme</div>
+          <div style="font-size:0.85rem;color:var(--terracotta);margin:4px 0;">30 min en voiture · bus ligne 806</div>
+          <p style="font-size:0.85rem;color:var(--text-light);margin:8px 0 0;line-height:1.5;">La plage la plus célèbre de Sicile — 1,5 km de sable blanc entre deux promontoires, eau turquoise, ambiance sicilienne authentique.</p>
+        </div>
+      </a>
+
+      <a href="https://maps.google.com/maps?q=Cefalù+Beach+Sicily" target="_blank" style="text-decoration:none;display:block;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+        <img id="img-cefalu" src="" alt="Cefalù" style="width:100%;height:180px;object-fit:cover;background:#b0c4d8;" onerror="this.onerror=null;this.style.background='#b0c4d8'">
+        <script>fetch('https://en.wikipedia.org/api/rest_v1/page/summary/Cefal%C3%B9').then(function(r){return r.json();}).then(function(d){var el=document.getElementById('img-cefalu');if(d.originalimage&&d.originalimage.source){el.src=d.originalimage.source;}else if(d.thumbnail&&d.thumbnail.source){el.src=d.thumbnail.source;}}).catch(function(){});</script>
+        <div style="padding:16px;background:#fff;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);font-weight:600;">Cefalù</div>
+          <div style="font-size:0.85rem;color:var(--terracotta);margin:4px 0;">~50 km · 1h en voiture ou train</div>
+          <p style="font-size:0.85rem;color:var(--text-light);margin:8px 0 0;line-height:1.5;">Ville médiévale avec cathédrale normande et 1 km de sable fin. Eaux transparentes, vieille ville à explorer — excursion parfaite d'une journée.</p>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ -->
+<!-- SECTION 11 — ROME -->
+<!-- ══════════════════════════════════════ -->
+<section class="section" id="rome">
+  <div class="container">
+    <div class="day-badge">🏛 1er Août</div>
+    <p class="section-eyebrow">Dernière étape</p>
+    <h2 class="section-title">Rome</h2>
+    <p class="prose" style="margin:8px 0 24px;">Rome est une ville à couper le souffle — des millénaires de civilisation superposés au fil des ruelles. Après la visite privée du Colisée, laissez-vous surprendre par la ville éternelle : fontaines baroques, places animées, et cuisine romaine authentique.</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">avant 5h00 · Check-out Olivaus</div>
+        <div class="timeline-content">Départ de Sicile, route vers l'aéroport et retour des voitures louées.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">8h00 · ✈️ Vol Sicile → Rome &nbsp;<span style="font-size:0.72rem;color:#cc0000;font-weight:600;">⚠️ Retardataires non attendus</span></div>
+        <div class="timeline-content">Départ de l'aéroport. Arrivée à Rome à 9h20.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">10h30 · 🏨 Déplacement vers l'hôtel · Hilton Garden Inn</div>
+        <div class="timeline-content">Trop tôt pour le check-in — on dépose les bagages à la réception et on repart léger explorer Rome. Les valises nous attendent sagement jusqu'à notre retour.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">12h00 · 🍽 Lunch près du Colisée</div>
+        <div class="timeline-content">Profitez des restaurants et trattorias autour du Colisée avant la visite — dernière chance de s'alimenter correctement avant 3 heures de marche dans la Rome antique.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">13h30 — ~3 heures · 🏟 Visite privée · Colisée · Forum Romain · Colline du Palatin</div>
+        <div class="timeline-content">Entrée sans file, guide privé, accès aux zones normalement fermées au public. Pendant 3 heures, Rome s'ouvre à nous comme elle s'est ouverte à peu. On marche où ont marché les gladiateurs, on touche des pierres posées il y a 2 000 ans, on entend l'histoire là où elle s'est jouée. Un des moments les plus forts du voyage.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">13h15 · Point de rendez-vous · 📍 Station de métro Colosseo — niveau inférieur</div>
+        <div class="timeline-content">Derrière le kiosque vert de souvenirs à l'entrée/sortie côté droit. Chercher le staff en rouge avec le panneau "The Tour Guy". <strong>Arriver 15 min en avance avec pièce d'identité.</strong></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">🏟 Colisée — 1er et 2e niveaux</div>
+        <div class="timeline-content">
+          <a href="https://www.coopculture.it/en/colosseo-e-area-archeologica-del-colosseo-palatino-e-foro-romano.cfm" target="_blank" style="text-decoration:none;display:block;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);margin-bottom:8px;">
+            <img id="img-rome-1" src="" alt="Colisée de Rome" style="width:100%;height:160px;object-fit:cover;background:#e8e0d0;" onerror="this.onerror=null;this.style.background='#e8e0d0'">
+            <script>fetch('https://en.wikipedia.org/api/rest_v1/page/summary/Colosseum').then(function(r){return r.json();}).then(function(d){var el=document.getElementById('img-rome-1');if(d.originalimage&&d.originalimage.source){el.src=d.originalimage.source;}else if(d.thumbnail&&d.thumbnail.source){el.src=d.thumbnail.source;}}).catch(function(){});</script>
+          </a>
+          Le plus grand amphithéâtre de l'Antiquité (80 apr. J.-C.). Capacité de 50 000 spectateurs pour les combats de gladiateurs.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Forum Romain</div>
+        <div class="timeline-content">
+          <a href="https://www.coopculture.it/en/colosseo-e-area-archeologica-del-colosseo-palatino-e-foro-romano.cfm" target="_blank" style="text-decoration:none;display:block;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);margin-bottom:8px;">
+            <img id="img-rome-2" src="" alt="Forum Romain" style="width:100%;height:160px;object-fit:cover;background:#e8e0d0;" onerror="this.onerror=null;this.style.background='#e8e0d0'">
+            <script>fetch('https://en.wikipedia.org/api/rest_v1/page/summary/Roman_Forum').then(function(r){return r.json();}).then(function(d){var el=document.getElementById('img-rome-2');if(d.originalimage&&d.originalimage.source){el.src=d.originalimage.source;}else if(d.thumbnail&&d.thumbnail.source){el.src=d.thumbnail.source;}}).catch(function(){});</script>
+          </a>
+          Cœur politique de la Rome antique — Sénat, temples, arcs triomphaux. Le lieu de crémation de Jules César s'y trouve.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">Colline du Palatin</div>
+        <div class="timeline-content">
+          <a href="https://www.coopculture.it/en/colosseo-e-area-archeologica-del-colosseo-palatino-e-foro-romano.cfm" target="_blank" style="text-decoration:none;display:block;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);margin-bottom:8px;">
+            <img id="img-rome-3" src="" alt="Colline du Palatin" style="width:100%;height:160px;object-fit:cover;background:#e8e0d0;" onerror="this.onerror=null;this.style.background='#e8e0d0'">
+            <script>fetch('https://en.wikipedia.org/api/rest_v1/page/summary/Palatine_Hill').then(function(r){return r.json();}).then(function(d){var el=document.getElementById('img-rome-3');if(d.originalimage&&d.originalimage.source){el.src=d.originalimage.source;}else if(d.thumbnail&&d.thumbnail.source){el.src=d.thumbnail.source;}}).catch(function(){});</script>
+          </a>
+          Berceau légendaire de Rome (Romulus, 753 av. J.-C.). Ruines des palais impériaux et vue panoramique sur le Circus Maximus.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="timeline" style="margin:24px 0;">
+      <div class="timeline-item">
+        <div class="timeline-time">16h30 · 🚶 Marche en direction du quartier Trastevere</div>
+        <div class="timeline-content">
+          <a href="https://en.wikipedia.org/wiki/Trastevere" target="_blank" style="text-decoration:none;display:block;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);margin-bottom:10px;">
+            <img id="img-trastevere" src="" alt="Trastevere, Rome" style="width:100%;height:180px;object-fit:cover;background:#c8b89a;" onerror="this.onerror=null;this.style.background='#c8b89a'">
+            <script>fetch('https://en.wikipedia.org/api/rest_v1/page/summary/Trastevere').then(function(r){return r.json();}).then(function(d){var el=document.getElementById('img-trastevere');if(d.originalimage&&d.originalimage.source){el.src=d.originalimage.source;}else if(d.thumbnail&&d.thumbnail.source){el.src=d.thumbnail.source;}}).catch(function(){});</script>
+          </a>
+          À pied à travers les ruelles de Rome — longue descente vers l'un des quartiers les plus authentiques de la ville. Pavés, linge aux fenêtres, trattorias débordantes. L'heure dorée tombe pile au bon moment.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">17h30 · 🍹 Flânage et cocktail dans le quartier</div>
+        <div class="timeline-content">Trastevere à l'heure de l'apéro — c'est quelque chose. Les tables débordent sur les ruelles, les spritz apparaissent, la musique sort des bars. On se pose, on commande, on regarde Rome vivre.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19h00 · 🍽 Souper · <a href="https://www.osteriabelli.it" target="_blank" style="color:inherit;text-decoration:underline;">Osteria Der Belli</a></div>
+        <div class="timeline-content">Une institution de Trastevere — cuisine romaine authentique dans l'une des plus belles piazzas du quartier. La pasta cacio e pepe ici, c'est une référence.</div>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-bottom:24px;">
+      <div class="info-box-title">🍝 Cuisine romaine à goûter</div>
+      <ul style="display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;margin:0;padding-left:18px;">
+        <li><strong>Cacio e Pepe</strong> — pâtes au pecorino et poivre noir, le plat emblématique</li>
+        <li><strong>Carbonara</strong> — avec pancetta, jaune d'œuf et pecorino (pas de crème!)</li>
+        <li><strong>Supplì</strong> — croquettes de riz frites, version romaine des arancini</li>
+        <li><strong>Artichaut à la romaine</strong> — carciofi alla romana, fondants à l'ail et menthe</li>
+        <li><strong>Gelato</strong> — une gelateria artisanale pour finir la journée</li>
+      </ul>
+    </div>
+
+    <!-- ══════════════════════════════════════ -->
+    <!-- 2 Août — Retour -->
+    <!-- ══════════════════════════════════════ -->
+    <div class="day-badge" style="margin-top:48px;">✈️ 2 Août</div>
+    <p class="section-eyebrow">Retour</p>
+    <h2 class="section-title">Dernière journée · Rome</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">7h45 · Check-out · Hilton Garden Inn</div>
+        <div class="timeline-content">Départ de l'hôtel avec tous les bagages.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">8h00 · 🚗 Quitte pour l'aéroport</div>
+        <div class="timeline-content">Navette de l'hôtel vers l'aéroport — disponible 24h/24, 7j/7, toutes les 15 minutes.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11h30 · ✈️ Vol retour · AC 893 · Rome → Montréal</div>
+        <div class="timeline-content"></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14h30 · 🏠 Arrivée à Montréal</div>
+        <div class="timeline-content">Les portes s'ouvrent, l'air frais de Montréal nous accueille — et quelque chose a changé. Pas juste le fuseau horaire. On rentre avec du soleil sicilien encore dans la peau, le goût du cacio e pepe en mémoire, et des photos plein le téléphone. Quatorze jours ensemble, onze personnes, deux pays, une famille. Ce voyage-là, on ne l'oubliera pas.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+(function(){
+  var WMO = {0:'☀️',1:'🌤',2:'⛅',3:'☁️',45:'🌫',48:'🌫',51:'🌦',53:'🌦',55:'🌧',
+             56:'🌧',57:'🌧',61:'🌦',63:'🌧',65:'🌧',66:'🌧',67:'🌧',71:'🌨',
+             73:'❄️',75:'❄️',77:'❄️',80:'🌦',81:'🌧',82:'🌧',85:'🌨',86:'❄️',
+             95:'⛈',96:'⛈',99:'⛈'};
+
+  var LOCS = [
+    {lat:40.6263,lon:14.3757,city:'Sorrento',start:'2026-07-18',end:'2026-07-22'},
+    {lat:40.2850,lon:15.0489,city:'Castellabate',start:'2026-07-23',end:'2026-07-27'},
+    {lat:38.1157,lon:13.3615,city:'Palermo',start:'2026-07-28',end:'2026-07-31'},
+    {lat:41.9028,lon:12.4964,city:'Rome',start:'2026-08-01',end:'2026-08-02'}
+  ];
+
+  var weatherByDate = {};
+
+  var promises = LOCS.map(function(loc){
+    var url = 'https://api.open-meteo.com/v1/forecast?latitude='+loc.lat+'&longitude='+loc.lon
+      +'&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=Europe%2FRome'
+      +'&start_date='+loc.start+'&end_date='+loc.end;
+    return fetch(url).then(function(r){return r.json();}).then(function(d){
+      d.daily.time.forEach(function(date,i){
+        weatherByDate[date]={
+          icon: WMO[d.daily.weathercode[i]]||'🌤',
+          max: Math.round(d.daily.temperature_2m_max[i]),
+          min: Math.round(d.daily.temperature_2m_min[i]),
+          city: loc.city
+        };
+      });
+    }).catch(function(){});
+  });
+
+  Promise.all(promises).then(function(){
+    var MONTH = {Juillet:'07',Août:'08'};
+    document.querySelectorAll('.day-badge').forEach(function(badge){
+      var txt = badge.textContent||'';
+      var m = txt.match(/(\d+)(?:er)?\s+(Juillet|Août)/);
+      if(!m) return;
+      var date = '2026-'+MONTH[m[2]]+'-'+String(parseInt(m[1])).padStart(2,'0');
+      var w = weatherByDate[date];
+      if(!w) return;
+      var span = document.createElement('a');
+      span.href = 'https://wttr.in/'+encodeURIComponent(w.city);
+      span.target = '_blank';
+      span.style.cssText = 'display:inline-flex;align-items:center;gap:4px;margin-left:10px;padding:2px 10px;background:rgba(255,255,255,0.85);border-radius:20px;font-size:0.75rem;font-weight:600;color:#1a2744;vertical-align:middle;border:1px solid rgba(255,255,255,0.5);text-decoration:none;cursor:pointer;';
+      span.textContent = w.icon+' '+w.max+'° / '+w.min+'°';
+      badge.appendChild(span);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
